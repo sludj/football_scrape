@@ -42,6 +42,8 @@ combined_analysis_drop_na <- combined_analysis %>%
   arrange(desc(value_avg)) %>% 
   mutate(avg_value_rank = row_number())
 
+write_csv(combined_analysis, "final_data/combined_analysis")
+write_csv(combined_analysis_drop_na, "final_data/combined_analysis_avg_value")
 
 top_50 <- combined_analysis %>% 
   filter(ktc_rank <= 50)
