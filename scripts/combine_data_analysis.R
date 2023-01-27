@@ -1,13 +1,16 @@
 # libraries
 library(tidyverse)
-library(cluster)
+library(ggplot2)
 
 # Combine the data
 fantasycalc <- read_csv("final_data/fantasycalc_values.csv") %>% 
-  mutate(fc_rank_overall = row_number())
+  mutate(fc_rank_overall = row_number(),
+         fc_position = str_sub(posRank, end = 2))
+
 ktc <- read_csv("final_data/ktc_values.csv") %>% 
   mutate(ktc_rank = row_number()) %>% 
   rename(ktc_value = player_values)
+
 fc_map <- read_csv("mapping_files/fc_map.csv")
 
 # map ktc names to fc
@@ -40,10 +43,38 @@ combined_analysis <- combined %>%
 combined_analysis_drop_na <- combined_analysis %>% 
   drop_na(value_avg) %>% 
   arrange(desc(value_avg)) %>% 
-  mutate(avg_value_rank = row_number())
+  mutate(avg_value_rank = row_number(),
+         value_avg_drop = value_avg - lag(value_avg))
 
 write_csv(combined_analysis, "final_data/combined_analysis.csv")
 write_csv(combined_analysis_drop_na, "final_data/combined_analysis_avg_value.csv")
 
-top_50 <- combined_analysis %>% 
-  filter(ktc_rank <= 50)
+# Make some charts!
+ggplot(combined_analysis_drop_na, aes(x = value_avg_drop)) + 
+  geom_histogram()
+
+ggplot(combined_analysis_drop_na, aes(x = ktc_value, y = fc_value)) +
+  geom_point()
+
+top_50 <- combined_analysis_drop_na %>% 
+  filter(avg_value_rank <= 50)
+
+ggplot(top_50, aes(x = ktc_value, y = fc_value, label = avg_value_rank)) +
+  geom_point() +
+  geom_label()
+
+# Try some k-means
+cluster_df <- top_50 %>% 
+  transmute(fc_value = as.numeric(fc_value), 
+            ktc_value = as.numeric(ktc_value))
+
+cluster_df <- na.omit(cluster_df)
+
+k5 <- kmeans(cluster_df, centers = 5)
+
+top_50 %>% 
+  select(player_name, fc_value, ktc_value) %>% 
+  as_tibble() %>% 
+  mutate(cluster = k5$cluster) %>% 
+  ggplot(aes(ktc_value, fc_value, color = factor(cluster), label = player_name)) +
+  geom_point()
