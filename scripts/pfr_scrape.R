@@ -47,6 +47,16 @@ for (i in seq(1, 10)) {
   output <- rbind(output, table_df_year)
 }
 
+# Quick analysis of the def
+output$Rk <- as.numeric(output$Rk)
+output$year <- as.date(output$year)
+
+output_avg_rnk <- output %>% 
+  group_by(Tm) %>% 
+  summarize(avg_rank = mean(Rk))
+
+ggplot(output, aes(x = year, y = Rk)) +
+  geom_line(aes(color = Tm))
 
 # Step 3. Export & share -------------------------------------------------------
-write_csv(table_df, "final_data/table_df.csv")
+write_csv(output, "final_data/table_df.csv")
