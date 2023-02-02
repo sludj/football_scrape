@@ -1,4 +1,4 @@
-# attempt to scrape fantasycalc.com
+# attempt to scrape fantasypros.com
 # Only requirement is installing these packages and java
 library("RSelenium")
 library("rvest")
@@ -18,11 +18,11 @@ remDr$navigate("https://www.fantasypros.com/nfl/stats/dst.php")
 # Allow the webpage to load
 Sys.sleep(5)
 
-output <- data.frame(matrix(ncol = 13, nrow = 0))
+output <- data.frame(matrix(ncol = 14, nrow = 0))
 colnames(output) <- c("Rank", "Player", "SACK", "INT", "FR", "FF", "DEF TD", 
-                      "SFTY", "SPC TD", "G", "FPTS", "FPTS/G", "ROST")
+                      "SFTY", "SPC TD", "G", "FPTS", "FPTS/G", "ROST", "year")
 
-for(i in seq(1, 7)) {
+for(i in seq(2, 12)) {
   html <- remDr$getPageSource()[[1]]
   
   player_rankings <- read_html(html) %>% 
@@ -31,12 +31,32 @@ for(i in seq(1, 7)) {
   
   player_rankings_df <- player_rankings[[1]]
   
-  output <- rbind(output, player_rankings_df)
+  title <- read_html(html) %>% 
+    html_nodes("title") %>% 
+    html_text()
   
-  remDr$findElement(using = "xpath", "/html/body/div[2]/div[4]/div/div/div/div[5]/div/form/div[1]/select")$clickElement()
-}
+  year <- substr(title, 1, 4)
+  
+  player_rankings_df_year <- player_rankings_df %>% 
+    mutate(year = year)
+  
+  output <- rbind(output, player_rankings_df_year)
+  
+  dropdown <- remDr$findElement(using = "xpath", "/html/body/div[2]/div[4]/div/div/div/div[5]/div/form/div[1]/select")
+  dropdown$clickElement()
+  
+  Sys.sleep(5)
+  
+  remDr$findElement(using = "xpath", paste0("/html/body/div[2]/div[4]/div/div/div/div[5]/div/form/div[1]/select/option[", i, "]"))$clickElement()
+  
+  Sys.sleep(5)
+  }
 
-write_csv(output, "final_data/fantasycalc_values.csv")
+avg_points_by_team <- output %>% 
+  group_by(Player) %>% 
+  summarize(avg_pts = mean(FPTS))
+
+write_csv(output, "final_data/fantasypros_def_values.csv")
 
 remDr$close()
 gc()
