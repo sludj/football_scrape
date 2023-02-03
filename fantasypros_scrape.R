@@ -56,6 +56,15 @@ avg_points_by_team <- output %>%
   group_by(Player) %>% 
   summarize(avg_pts = mean(FPTS))
 
+ggplot(output, aes(x = year, y = `FPTS/G`, label = Player)) +
+  geom_boxplot()
+
+output_5_yr <- output %>% 
+  filter(year >= 2017)
+
+ggplot(output_5_yr, aes(x = year, y = `FPTS/G`, label = Player)) + 
+  geom_dotplot(binaxis = "y", stackdir = "center")
+
 write_csv(output, "final_data/fantasypros_def_values.csv")
 
 remDr$close()
