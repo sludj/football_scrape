@@ -1,8 +1,6 @@
 # Scraping some pro-football-reference data
 # 
-# Goal is to get player information
-# We want fantasy stats by year, and combine stats to join on the player
-# Also interested in some defense analysis
+# Goal is to get defense analysis
 
 # Step 1: Libraries and setup --------------------------------------------------
 library(tidyverse)

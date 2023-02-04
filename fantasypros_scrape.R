@@ -52,20 +52,51 @@ for(i in seq(2, 12)) {
   Sys.sleep(5)
   }
 
-avg_points_by_team <- output %>% 
-  group_by(Player) %>% 
-  summarize(avg_pts = mean(FPTS))
-
-ggplot(output, aes(x = year, y = `FPTS/G`, label = Player)) +
-  geom_boxplot()
-
-output_5_yr <- output %>% 
-  filter(year >= 2017)
-
-ggplot(output_5_yr, aes(x = year, y = `FPTS/G`, label = Player)) + 
-  geom_dotplot(binaxis = "y", stackdir = "center")
-
+distinct(output, year)
 write_csv(output, "final_data/fantasypros_def_values.csv")
 
 remDr$close()
 gc()
+
+# Future analysis
+def_values_12_22 <- read_csv("final_data/fantasypros_def_values.csv")
+
+# Making year character to help with the visualizations
+def_values_12_22$year <- as.character(def_values_12_22$year)
+
+avg_points_by_team <- def_values_12_22 %>% 
+  group_by(Player) %>% 
+  summarize(avg_pts = mean(FPTS))
+
+ggplot(def_values_12_22, aes(x = year, y = `FPTS/G`, label = Player)) +
+  geom_boxplot()
+
+def_values_18_22 <- def_values_12_22 %>% 
+  filter(year >= 2018)
+
+def_values_12_17 <- def_values_12_22 %>% 
+  filter(year < 2018)
+
+# Quick average and standard deviation
+get_mean_std <- function(df){
+  df %>% 
+    select(Player, `FPTS/G`) %>% 
+    group_by(Player) %>% 
+    summarize(average_points = mean(`FPTS/G`),
+              std_dev_points = sd(`FPTS/G`))
+}
+
+(def_values_18_22_sum_stats <- get_mean_std(def_values_18_22))
+
+(def_values_12_17_sum_stats <- get_mean_std(def_values_12_17))
+
+ggplot(def_values_18_22, aes(x = year, y = `FPTS/G`, label = Player)) + 
+  geom_dotplot(binaxis = "y", stackdir = "center")
+
+wide_fantasy_values_18_22 <- def_values_18_22 %>% 
+  select(Player, `FPTS/G`, year) %>% 
+  pivot_wider(names_from = year, values_from = `FPTS/G`)
+
+wide_fantasy_values_12_17 <- def_values_12_17 %>% 
+  select(Player, `FPTS/G`, year) %>% 
+  pivot_wider(names_from = year, values_from = `FPTS/G`)
