@@ -54,3 +54,11 @@ for (i in seq(1, 22)) {
   # sleep to avoid too many requests
   Sys.sleep(5)
 }
+
+# Clean it up
+# Start with the extra character in the output player
+fantasy_clean_names <- output %>% 
+  mutate(Player = str_remove_all(.$Player, "[^[:alpha:]]+$"))
+
+distinct(fantasy_clean_names, Player)
+
