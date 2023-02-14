@@ -60,5 +60,6 @@ for (i in seq(1, 22)) {
 fantasy_clean_names <- output %>% 
   mutate(Player = str_remove_all(.$Player, "[^[:alpha:]]+$"))
 
-distinct(fantasy_clean_names, Player)
+player_names <- distinct(fantasy_clean_names, Player)
 
+write_csv(player_names, "mapping_files/player_names.csv")

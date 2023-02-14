@@ -1,6 +1,7 @@
 # libraries
 library(tidyverse)
 library(ggplot2)
+library(caret)
 
 # Combine the data
 fantasycalc <- read_csv("final_data/fantasycalc_values.csv") %>% 
@@ -45,6 +46,20 @@ combined_analysis_drop_na <- combined_analysis %>%
   arrange(desc(value_avg)) %>% 
   mutate(avg_value_rank = row_number(),
          value_avg_drop = value_avg - lag(value_avg))
+
+# range
+ktc_max <- range(combined_analysis_drop_na$ktc_value)[2]
+ktc_min <- range(combined_analysis_drop_na$ktc_value)[1]
+ktc_data_range <- ktc_max - ktc_min
+
+fc_max <- range(combined_analysis_drop_na$fc_value)[2]
+fc_min <- range(combined_analysis_drop_na$fc_value)[1]
+fc_range <- fc_max - fc_min
+
+normalized_values <- combined_analysis_drop_na %>% 
+  mutate(normalized_ktc = (ktc_value - ktc_min) / ktc_data_range,
+         normalized_fc = (fc_value - fc_min) / fc_range,
+         avg_norm = (normalized_ktc + normalized_fc) / 2)
 
 write_csv(combined_analysis, "final_data/combined_analysis.csv")
 write_csv(combined_analysis_drop_na, "final_data/combined_analysis_avg_value.csv")
