@@ -58,9 +58,9 @@ fc_max <- range(combined_analysis_drop_na$fc_value)[2]
 fc_min <- range(combined_analysis_drop_na$fc_value)[1]
 fc_range <- fc_max - fc_min
 
-normalized_values <- combined_analysis_drop_na %>% 
-  mutate(normalized_ktc = (ktc_value - ktc_min) / ktc_data_range,
-         normalized_fc = (fc_value - fc_min) / fc_range,
+normalized_values <- combined_analysis_drop_na %>%
+  mutate(normalized_ktc = round((ktc_value - ktc_min) / ktc_data_range * 10000, 0),
+         normalized_fc = round((fc_value - fc_min) / fc_range * 10000, 0),
          avg_norm = (normalized_ktc + normalized_fc) / 2) %>% 
   arrange(desc(avg_norm)) %>% 
   mutate(avg_norm_rank = row_number(),
