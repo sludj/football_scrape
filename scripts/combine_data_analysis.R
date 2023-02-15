@@ -73,10 +73,10 @@ normalized_values <- combined_analysis_drop_na %>%
 
 write_csv(combined_analysis, "final_data/combined_analysis.csv")
 write_csv(combined_analysis_drop_na, "final_data/combined_analysis_avg_value.csv")
-write_csv(normalized_values, "final_data/combined_analysis_norm_values")
+write_csv(normalized_values, "final_data/combined_analysis_norm_values.csv")
 
 # Make some charts!
-ggplot(normalized_values, aes(x = value_avg_drop)) + 
+ggplot(normalized_values, aes(x = norm_value_drop)) + 
   geom_histogram()
 
 ggplot(combined_analysis_drop_na, aes(x = ktc_value, y = fc_value)) +
