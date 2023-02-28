@@ -19,7 +19,8 @@ remDr$navigate("https://www.fantasycalc.com/rankings")
 Sys.sleep(5)
 
 # Click the button to turn it to superflex rankings
-remDr$findElement(using = "xpath", "/html/body/app-root/main/app-rankings/div/div[1]/div/div[1]/app-single-settings-select/div/div/ui-switch/button")$clickElement()
+# comment it as maybe defaulting to superflex now
+#remDr$findElement(using = "xpath", "/html/body/app-root/main/app-rankings/div/div[1]/div/div[1]/app-single-settings-select/div/div/ui-switch/button")$clickElement()
 
 # Ensure it loaded superflex
 Sys.sleep(5)

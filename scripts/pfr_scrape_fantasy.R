@@ -60,6 +60,9 @@ for (i in seq(1, 22)) {
 fantasy_clean_names <- output %>% 
   mutate(Player = str_remove_all(.$Player, "[^[:alpha:]]+$"))
 
+# This step is a one time export to create the master list of names
 player_names <- distinct(fantasy_clean_names, Player)
+#write_csv(player_names, "mapping_files/player_names.csv")
 
-write_csv(player_names, "mapping_files/player_names.csv")
+write_csv(fantasy_clean_names, "final_data/pfr_fantasy_2000_2022.csv")
+
