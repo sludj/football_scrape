@@ -23,7 +23,7 @@ colnames(output) <- c("Rk", "Player", "Tm", "FantPos", "Age", "Games G", "Games 
                       "Fantasy PosRank", "Fantasy OvRank", "year")
 
 # Pull for each year in our list
-for (i in seq(1, 12)) {
+for (i in seq(1, 13)) {
   
   url <- sprintf("https://www.pro-football-reference.com/years/%s/fantasy.htm", years_to_pull[i])
   

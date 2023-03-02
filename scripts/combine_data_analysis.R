@@ -15,12 +15,18 @@ ktc <- read_csv("final_data/ktc_values.csv") %>%
   rename(ktc_value = player_values)
 
 fc_map <- read_csv("mappings/fc_map.csv")
+draft_data_map <- read_csv("mappings/draft_data_map.csv")
 
 draft_data <- read_csv("final_data/pfr_draft_2010_2022.csv") %>% 
   clean_names() %>% 
-  rename(draft_age = age, draft_year = year) %>% 
+  rename(draft_age = age, draft_year = year, player_name = player) %>% 
   filter(to == 2022) %>% 
-  select(-to)
+  select(-to) %>% 
+  left_join(draft_data_map) %>% 
+  mutate(combined_name = coalesce(player_name_combined, player_name)) %>% 
+  drop_na(combined_name) %>% 
+  select(player_name = combined_name,
+         draft_age, draft_year, pos, rnd, pick)
 
 # map ktc names to fc
 fc_mapped <- fantasycalc %>% 
@@ -31,7 +37,8 @@ fc_mapped <- fantasycalc %>%
 
 # Join together
 combined <- ktc %>% 
-  left_join(fc_mapped)
+  left_join(fc_mapped) %>% 
+  left_join(draft_data)
 
 # Check what doesn't map (if needed) ---------
 # no_join_fc <- anti_join(fantasycalc, ktc)
@@ -74,7 +81,8 @@ normalized_values <- combined_analysis_drop_na %>%
          norm_value_drop = avg_norm - lag(avg_norm),
          fc_position = str_extract(fc_rank, "^[A-Z]{2}")) %>% 
   select(player_name, normalized_ktc, normalized_fc, ktc_rank, fc_position,
-         fc_rank_overall, rank_diff, avg_norm, avg_norm_rank, norm_value_drop)
+         fc_rank_overall, rank_diff, avg_norm, avg_norm_rank, norm_value_drop,
+         draft_year, rnd, pick)
          
 
 

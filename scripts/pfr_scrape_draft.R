@@ -17,7 +17,7 @@ years_to_pull <- seq(from = 2010, to = 2022, by = 1)
 output <- data.frame(matrix(ncol = 7, nrow = 0))
 colnames(output) <- c("Player", "Pos", "Rnd", "Pick", "Age", "To", "draft_year")
 
-for (i in seq(1, 12)) {
+for (i in seq(1, 13)) {
   
   url <- sprintf("https://www.pro-football-reference.com/years/%s/draft.htm", years_to_pull[i])
   
