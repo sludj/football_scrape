@@ -9,7 +9,7 @@ library(rvest)
 
 # Step 2. Rvest pull of main table ---------------------------------------------
 # We want the table for the past 10 years
-years_to_pull <- seq(from = 2000, to = 2022, by = 1)
+years_to_pull <- seq(from = 2010, to = 2022, by = 1)
 output <- data.frame(matrix(ncol = 34, nrow = 0))
 
 # list of all columns we're going to pull
@@ -23,7 +23,7 @@ colnames(output) <- c("Rk", "Player", "Tm", "FantPos", "Age", "Games G", "Games 
                       "Fantasy PosRank", "Fantasy OvRank", "year")
 
 # Pull for each year in our list
-for (i in seq(1, 22)) {
+for (i in seq(1, 12)) {
   
   url <- sprintf("https://www.pro-football-reference.com/years/%s/fantasy.htm", years_to_pull[i])
   
@@ -64,5 +64,5 @@ fantasy_clean_names <- output %>%
 player_names <- distinct(fantasy_clean_names, Player)
 #write_csv(player_names, "mapping_files/player_names.csv")
 
-write_csv(fantasy_clean_names, "final_data/pfr_fantasy_2000_2022.csv")
+write_csv(fantasy_clean_names, "final_data/pfr_fantasy_2010_2022.csv")
 

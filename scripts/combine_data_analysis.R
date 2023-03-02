@@ -16,8 +16,15 @@ ktc <- read_csv("final_data/ktc_values.csv") %>%
 
 fc_map <- read_csv("mappings/fc_map.csv")
 
+draft_data <- read_csv("final_data/pfr_draft_2010_2022.csv") %>% 
+  clean_names() %>% 
+  rename(draft_age = age, draft_year = year) %>% 
+  filter(to == 2022) %>% 
+  select(-to)
+
 # map ktc names to fc
 fc_mapped <- fantasycalc %>% 
+  mutate(player_name = str_remove(.$player_name, "arrow_circle_up|arrow_circle_down")) %>% 
   left_join(fc_map) %>% 
   mutate(combined_name = coalesce(ktc_name, player_name)) %>% 
   select(player_name = combined_name, age, fc_value = value, fc_rank = posRank, fc_rank_overall)

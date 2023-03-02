@@ -24,8 +24,11 @@ files <- list.files(path = "raw_data/", pattern = "fp.*csv") %>%
   mutate(value = coalesce(.$sf_value, .$trade_value),
          value_num = as.numeric(value)) %>% 
   select(name, value_num) %>% 
-  filter(value_num > 1)
+  filter(value_num > 1) %>% 
+  arrange(desc(value_num))
 
+# export
+write_csv(files, "final_data/fantasy_pros_trade_value_march.csv")
 
 
          
