@@ -28,6 +28,11 @@ draft_data <- read_csv("final_data/pfr_draft_2010_2022.csv") %>%
   select(player_name = combined_name,
          draft_age, draft_year, pos, rnd, pick)
 
+fp_tv <- read_csv("final_data/fantasy_pros_trade_value_march.csv") %>% 
+  rename(player_name = name, fp_value = value_num)
+
+fp_map <- read_csv("mappings/fp_mapping.csv")
+
 # map ktc names to fc
 fc_mapped <- fantasycalc %>% 
   mutate(player_name = str_remove(.$player_name, "arrow_circle_up|arrow_circle_down")) %>% 
@@ -35,10 +40,16 @@ fc_mapped <- fantasycalc %>%
   mutate(combined_name = coalesce(ktc_name, player_name)) %>% 
   select(player_name = combined_name, age, fc_value = value, fc_rank = posRank, fc_rank_overall)
 
+fp_mapped <- fp_tv %>% 
+  left_join(fp_map) %>% 
+  mutate(combined_name = coalesce(player_name_combined, player_name)) %>% 
+  select(player_name = combined_name, fp_value)
+
 # Join together
 combined <- ktc %>% 
   left_join(fc_mapped) %>% 
-  left_join(draft_data)
+  left_join(draft_data) %>% 
+  left_join(fp_mapped)
 
 # Check what doesn't map (if needed) ---------
 # no_join_fc <- anti_join(fantasycalc, ktc)
@@ -55,7 +66,7 @@ combined <- ktc %>%
 # calculate difference in value and rank
 combined_analysis <- combined %>% 
   mutate(rank_diff = ktc_rank - fc_rank_overall,
-         value_avg = (ktc_value + fc_value) / 2) 
+         value_avg = (ktc_value + fc_value) / 2)
 
 combined_analysis_drop_na <- combined_analysis %>% 
   drop_na(value_avg) %>% 
@@ -72,6 +83,9 @@ fc_max <- range(combined_analysis_drop_na$fc_value)[2]
 fc_min <- range(combined_analysis_drop_na$fc_value)[1]
 fc_range <- fc_max - fc_min
 
+fp_min <- range(fp_tv$fp_value)[1]
+fp_range <- range(fp_tv$fp_value)[2] - range(fp_tv$fp_value)[1]
+
 normalized_values <- combined_analysis_drop_na %>%
   mutate(normalized_ktc = round((ktc_value - ktc_min) / ktc_data_range * 10000, 0),
          normalized_fc = round((fc_value - fc_min) / fc_range * 10000, 0),
@@ -83,12 +97,34 @@ normalized_values <- combined_analysis_drop_na %>%
   select(player_name, normalized_ktc, normalized_fc, ktc_rank, fc_position,
          fc_rank_overall, rank_diff, avg_norm, avg_norm_rank, norm_value_drop,
          draft_year, rnd, pick)
+
+normalized_tri_values <- combined %>% 
+  drop_na(fc_value) %>% 
+  mutate(normalized_ktc = round((ktc_value - ktc_min) / ktc_data_range * 10000, 0),
+         normalized_fc = round((fc_value - fc_min) / fc_range * 10000, 0),
+         normalized_fp = round((fp_value - fp_min) / fp_range * 10000, 0),
+         avg_norm = case_when(
+           is.na(normalized_fp) ~ (normalized_ktc + normalized_fc) / 2,
+           !is.na(normalized_fp) ~ (normalized_ktc + normalized_fc + normalized_fp) / 3
+         ),
+         weighted_avg_norm = case_when(
+           is.na(normalized_fp) ~ (normalized_ktc * .33) + (normalized_fc * .66),
+           !is.na(normalized_fp) ~ (normalized_ktc * .25) + (normalized_fc * .5) + (normalized_fp * .25)
+         )) %>% 
+  arrange(desc(weighted_avg_norm)) %>% 
+  mutate(weighted_avg_norm_rank = row_number(),
+         weighted_norm_value_drop = weighted_avg_norm - lag(weighted_avg_norm),
+         fc_position = str_extract(fc_rank, "^[A-Z]{2}")) %>% 
+  select(player_name, normalized_ktc, normalized_fc, normalized_fp, ktc_rank, fc_position,
+         fc_rank_overall, avg_norm, weighted_avg_norm, weighted_avg_norm_rank, 
+         weighted_norm_value_drop, draft_year, rnd, pick)
          
 
 
 write_csv(combined_analysis, "final_data/combined_analysis.csv")
 write_csv(combined_analysis_drop_na, "final_data/combined_analysis_avg_value.csv")
 write_csv(normalized_values, "final_data/combined_analysis_norm_values.csv")
+write_csv(normalized_tri_values, "final_data/combined_analysis_weighted_tri_norm_values.csv")
 
 # Make some charts!
 ggplot(normalized_values, aes(x = norm_value_drop)) + 
@@ -118,4 +154,36 @@ top_50 %>%
   as_tibble() %>% 
   mutate(cluster = k5$cluster) %>% 
   ggplot(aes(ktc_value, fc_value, color = factor(cluster), label = player_name)) +
+  geom_point()
+
+# again for tri values
+# Make some charts!
+ggplot(normalized_tri_values, aes(x = weighted_norm_value_drop)) + 
+  geom_histogram()
+
+ggplot(normalized_tri_values, aes(x = normalized_ktc, y = normalized_fc)) +
+  geom_point()
+
+top_50_norm <- normalized_tri_values %>% 
+  filter(weighted_avg_norm_rank <= 50)
+
+ggplot(top_50_norm, aes(x = normalized_ktc, y = normalized_fc, label = weighted_avg_norm_rank)) +
+  geom_point() +
+  geom_label()
+
+# Try some k-means
+cluster_df_norm <- top_50_norm %>% 
+  transmute(fc_value = as.numeric(normalized_fc), 
+            ktc_value = as.numeric(normalized_ktc),
+            fp_value = as.numeric(normalized_fp))
+
+cluster_df_norm <- na.omit(cluster_df_norm)
+
+k5_norm <- kmeans(cluster_df_norm, centers = 7)
+
+top_50_norm %>% 
+  select(player_name, normalized_fc, normalized_ktc) %>% 
+  as_tibble() %>% 
+  mutate(cluster = k5_norm$cluster) %>% 
+  ggplot(aes(normalized_ktc, normalized_fc, color = factor(cluster), label = player_name)) +
   geom_point()
