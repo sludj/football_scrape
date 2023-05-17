@@ -2,6 +2,7 @@
 library(tidyverse)
 library(ggplot2)
 library(caret)
+library(janitor)
 
 options(scipen = 999)
 
@@ -35,7 +36,7 @@ fp_map <- read_csv("mappings/fp_mapping.csv")
 
 # map ktc names to fc
 fc_mapped <- fantasycalc %>% 
-  mutate(player_name = str_remove(.$player_name, "arrow_circle_up|arrow_circle_down")) %>% 
+  mutate(player_name = str_remove(.$player_name, "Rarrow_circle_up|Rarrow_circle_down|arrow_circle_up|arrow_circle_down|R$")) %>% 
   left_join(fc_map) %>% 
   mutate(combined_name = coalesce(ktc_name, player_name)) %>% 
   select(player_name = combined_name, age, fc_value = value, fc_rank = posRank, fc_rank_overall)
@@ -68,6 +69,8 @@ combined_analysis <- combined %>%
   mutate(rank_diff = ktc_rank - fc_rank_overall,
          value_avg = (ktc_value + fc_value) / 2)
 
+players_dropped <- filter(combined_analysis, is.na(value_avg))
+
 combined_analysis_drop_na <- combined_analysis %>% 
   drop_na(value_avg) %>% 
   arrange(desc(value_avg)) %>% 
@@ -98,24 +101,17 @@ normalized_values <- combined_analysis_drop_na %>%
          fc_rank_overall, rank_diff, avg_norm, avg_norm_rank, norm_value_drop,
          draft_year, rnd, pick)
 
-normalized_tri_values <- combined %>% 
+normalized_bi_values <- combined %>% 
   drop_na(fc_value) %>% 
   mutate(normalized_ktc = round((ktc_value - ktc_min) / ktc_data_range * 10000, 0),
          normalized_fc = round((fc_value - fc_min) / fc_range * 10000, 0),
-         normalized_fp = round((fp_value - fp_min) / fp_range * 10000, 0),
-         avg_norm = case_when(
-           is.na(normalized_fp) ~ (normalized_ktc + normalized_fc) / 2,
-           !is.na(normalized_fp) ~ (normalized_ktc + normalized_fc + normalized_fp) / 3
-         ),
-         weighted_avg_norm = case_when(
-           is.na(normalized_fp) ~ (normalized_ktc * .33) + (normalized_fc * .66),
-           !is.na(normalized_fp) ~ (normalized_ktc * .25) + (normalized_fc * .5) + (normalized_fp * .25)
-         )) %>% 
+         avg_norm = (normalized_ktc + normalized_fc) / 2,
+         weighted_avg_norm = (normalized_ktc * .33) + (normalized_fc * .66)) %>% 
   arrange(desc(weighted_avg_norm)) %>% 
   mutate(weighted_avg_norm_rank = row_number(),
          weighted_norm_value_drop = weighted_avg_norm - lag(weighted_avg_norm),
          fc_position = str_extract(fc_rank, "^[A-Z]{2}")) %>% 
-  select(player_name, normalized_ktc, normalized_fc, normalized_fp, ktc_rank, fc_position,
+  select(player_name, normalized_ktc, normalized_fc, ktc_rank, fc_position,
          fc_rank_overall, avg_norm, weighted_avg_norm, weighted_avg_norm_rank, 
          weighted_norm_value_drop, draft_year, rnd, pick)
          
@@ -124,7 +120,7 @@ normalized_tri_values <- combined %>%
 write_csv(combined_analysis, "final_data/combined_analysis.csv")
 write_csv(combined_analysis_drop_na, "final_data/combined_analysis_avg_value.csv")
 write_csv(normalized_values, "final_data/combined_analysis_norm_values.csv")
-write_csv(normalized_tri_values, "final_data/combined_analysis_weighted_tri_norm_values.csv")
+write_csv(normalized_bi_values, "final_data/combined_analysis_weighted_bi_norm_values.csv")
 
 # Make some charts!
 ggplot(normalized_values, aes(x = norm_value_drop)) + 

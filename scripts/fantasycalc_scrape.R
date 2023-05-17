@@ -46,7 +46,7 @@ for(i in seq(1, 7)) {
   
   output <- rbind(output, player_rankings_final)
   
-  remDr$findElement(using = "xpath", "/html/body/app-root/main/app-rankings/div/div[1]/app-rankings-list/mat-card/mat-card-content/mat-paginator/div/div/div[2]/button[2]")$clickElement()
+  remDr$findElement(using = "xpath", "/html/body/app-root/main/app-dynasty-rankings/app-rankings/div/div[1]/app-rankings-list/mat-card/mat-card-content/mat-paginator/div/div/div[2]/button[2]")$clickElement()
 }
 
 write_csv(output, "final_data/fantasycalc_values.csv")
