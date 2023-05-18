@@ -33,6 +33,8 @@ fp_tv <- read_csv("final_data/fantasy_pros_trade_value_march.csv") %>%
   rename(player_name = name, fp_value = value_num)
 
 fp_map <- read_csv("mappings/fp_mapping.csv")
+sleeper_map <- read_csv("mappings/player_sleeper_team_map.csv")
+sleeper_teams <- read_csv("final_data/reference_table/sleeper_teams.csv")
 
 # map ktc names to fc
 fc_mapped <- fantasycalc %>% 
@@ -46,11 +48,13 @@ fp_mapped <- fp_tv %>%
   mutate(combined_name = coalesce(player_name_combined, player_name)) %>% 
   select(player_name = combined_name, fp_value)
 
-# Join together
+# Join together - include sleeper maps here as they are already consolidated
 combined <- ktc %>% 
   left_join(fc_mapped) %>% 
   left_join(draft_data) %>% 
-  left_join(fp_mapped)
+  left_join(fp_mapped) %>% 
+  left_join(sleeper_map) %>% 
+  left_join(sleeper_teams)
 
 # Check what doesn't map (if needed) ---------
 # no_join_fc <- anti_join(fantasycalc, ktc)
@@ -99,7 +103,7 @@ normalized_values <- combined_analysis_drop_na %>%
          fc_position = str_extract(fc_rank, "^[A-Z]{2}")) %>% 
   select(player_name, normalized_ktc, normalized_fc, ktc_rank, fc_position,
          fc_rank_overall, rank_diff, avg_norm, avg_norm_rank, norm_value_drop,
-         draft_year, rnd, pick)
+         draft_year, rnd, pick, team_name)
 
 normalized_bi_values <- combined %>% 
   drop_na(fc_value) %>% 
@@ -113,10 +117,9 @@ normalized_bi_values <- combined %>%
          fc_position = str_extract(fc_rank, "^[A-Z]{2}")) %>% 
   select(player_name, normalized_ktc, normalized_fc, ktc_rank, fc_position,
          fc_rank_overall, avg_norm, weighted_avg_norm, weighted_avg_norm_rank, 
-         weighted_norm_value_drop, draft_year, rnd, pick)
-         
-
-
+         weighted_norm_value_drop, draft_year, rnd, pick, team_name)
+  
+# Export final datasets       
 write_csv(combined_analysis, "final_data/combined_analysis.csv")
 write_csv(combined_analysis_drop_na, "final_data/combined_analysis_avg_value.csv")
 write_csv(normalized_values, "final_data/combined_analysis_norm_values.csv")
