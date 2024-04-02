@@ -50,6 +50,12 @@ ggplot(data = total_by_team, mapping = aes(x = reorder(team_name, -total_value_b
        title = "Community Consensus Team Values",
        fill = "Position")
 
+# Change in team value
+value_change <- full_data %>% 
+  left_join(select(prev_full_data, player_name, prev_value = weighted_avg_norm), by = "player_name") %>% 
+  mutate(change_in_value = weighted_avg_norm - prev_value,
+         perc_change_in_value = change_in_value / prev_value * 100)
+
 # Step 4: Save image & export archive ----------------------------------------
 ggsave("final_data/weekly_junk/cctv.pdf")
 write_csv(full_data, "final_data/z_archive/full_data_wj.csv")

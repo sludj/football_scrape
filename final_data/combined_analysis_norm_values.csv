@@ -1,303 +1,265 @@
 player_name,normalized_ktc,normalized_fc,ktc_rank,fc_position,fc_rank_overall,rank_diff,avg_norm,avg_norm_rank,norm_value_drop,draft_year,rnd,pick,team_name
-Patrick Mahomes,10000,10000,1,QB,1,0,10000,1,NA,2017,1,10,Pablo and the Stallions
-Josh Allen,9767,8805,2,QB,2,0,9286,2,-714,2018,1,7,The Scene Worships Me
-Jalen Hurts,9754,7901,3,QB,3,0,8827.5,3,-458.5,2020,2,53,A Team of Chance
-Justin Jefferson,9684,7299,4,WR,5,-1,8491.5,4,-336,2020,1,22,The Serle Brothers
-Joe Burrow,9174,7477,5,QB,4,1,8325.5,5,-166,2020,1,1,JoJos Bizzare Massage
-Ja'Marr Chase,9012,7240,6,WR,6,0,8126,6,-199.5,2021,1,5,The Serle Brothers
-Justin Herbert,8451,6623,7,QB,7,0,7537,7,-589,2020,1,6,Kissy Boy Jones
-Lamar Jackson,7818,6400,9,QB,9,0,7109,8,-428,2018,1,32,DirtyDan113
-Trevor Lawrence,8111,6000,8,QB,11,-3,7055.5,9,-53.5,2021,1,1,HorseWomen of Color
-Bijan Robinson,7786,6291,10,RB,10,0,7038.5,10,-17,NA,NA,NA,Howling for Chubb
-CeeDee Lamb,7328,4912,11,WR,14,-3,6120,11,-918.5,2020,1,17,A Team of Chance
-Justin Fields,7092,5146,13,QB,12,1,6119,12,-1,2021,1,11,Howling for Chubb
-Garrett Wilson,7118,4694,12,WR,16,-4,5906,13,-213,2022,1,10,Pablo and the Stallions
-A.J. Brown,6865,4897,14,WR,15,-1,5881,14,-25,2019,2,51,JoJos Bizzare Massage
-Jaylen Waddle,6778,4524,15,WR,18,-3,5651,15,-230,2021,1,6,DirtyDan113
-Amon-Ra St. Brown,6463,4452,16,WR,19,-3,5457.5,16,-193.5,2021,4,112,The Millennium Beer
-Anthony Richardson,6175,4412,19,QB,20,-1,5293.5,17,-164,NA,NA,NA,The Serle Brothers
-Deshaun Watson,5765,4676,27,QB,17,10,5220.5,18,-73,2017,1,12,JoJos Bizzare Massage
-Chris Olave,6400,4033,17,WR,25,-8,5216.5,19,-4,2022,1,11,Kissy Boy Jones
-Breece Hall,6199,4139,18,RB,24,-6,5169,20,-47.5,2022,2,36,The Scene Worships Me
-Jonathan Taylor,6077,4201,21,RB,21,0,5139,21,-30,2020,2,41,The Millennium Beer
-Christian McCaffrey,6098,4154,20,RB,23,-3,5126,22,-13,2017,1,8,The Scene Worships Me
-Travis Kelce,5661,3995,32,TE,26,6,4828,23,-298,2013,3,63,HorseWomen of Color
-Bryce Young,5884,3684,25,QB,32,-7,4784,24,-44,NA,NA,NA,Kissy Boy Jones
-Mark Andrews,5682,3861,30,TE,28,2,4771.5,25,-12.5,2018,3,86,HorseWomen of Color
-Saquon Barkley,5648,3743,34,RB,30,4,4695.5,26,-76,2018,1,2,HorseWomen of Color
-Tyreek Hill,5664,3719,31,WR,31,0,4691.5,27,-4,2016,5,165,Kissy Boy Jones
-Kyler Murray,5505,3831,38,QB,29,9,4668,28,-23.5,2019,1,1,The Serle Brothers
-Jahmyr Gibbs,5883,3403,26,RB,38,-12,4643,29,-25,NA,NA,NA,HorseWomen of Color
-DeVonta Smith,5922,3308,24,WR,41,-17,4615,30,-28,2021,1,10,Pablo and the Stallions
-Kyle Pitts,5632,3593,37,TE,34,3,4612.5,31,-2.5,2021,1,4,Pablo and the Stallions
-C.J. Stroud,5633,3543,36,QB,36,0,4588,32,-24.5,NA,NA,NA,Howling for Chubb
-Tee Higgins,5749,3378,28,WR,39,-11,4563.5,33,-24.5,2020,2,33,A Team of Chance
-DK Metcalf,5640,3287,35,WR,42,-7,4463.5,34,-100,2019,2,64,The Millennium Beer
-Dak Prescott,5251,3632,41,QB,33,8,4441.5,35,-22,2016,4,135,DirtyDan113
-Stefon Diggs,5414,3467,40,WR,37,3,4440.5,36,-1,2015,5,146,HorseWomen of Color
-Cooper Kupp,5250,3573,42,WR,35,7,4411.5,37,-29,2017,3,69,The Scene Worships Me
-Drake London,5651,3172,33,WR,45,-12,4411.5,38,0,2022,1,8,A Team of Chance
-Jaxon Smith-Njigba,5685,3116,29,WR,47,-18,4400.5,39,-11,NA,NA,NA,Pablo and the Stallions
-Tua Tagovailoa,5417,3224,39,QB,44,-5,4320.5,40,-80,2020,1,5,The Millennium Beer
-Josh Jacobs,5128,3088,44,RB,48,-4,4108,41,-212.5,2019,1,24,Kissy Boy Jones
-Travis Etienne,5186,2930,43,RB,50,-7,4058,42,-50,2021,1,25,JoJos Bizzare Massage
-Austin Ekeler,4759,3275,50,RB,43,7,4017,43,-41,NA,NA,NA,DirtyDan113
-Nick Chubb,4874,3160,46,RB,46,0,4017,44,0,2018,2,35,Howling for Chubb
-Kenneth Walker,4996,2857,45,RB,51,-6,3926.5,45,-90.5,2022,2,41,DirtyDan113
-Daniel Jones,4808,2809,48,QB,52,-4,3808.5,46,-118,2019,1,6,Pablo and the Stallions
-Rhamondre Stevenson,4701,2803,52,RB,53,-1,3752,47,-56.5,2021,4,120,A Team of Chance
-Davante Adams,4672,2801,55,WR,54,1,3736.5,48,-15.5,2014,2,53,The Scene Worships Me
-Najee Harris,4648,2683,56,RB,55,1,3665.5,49,-71,2021,1,24,The Serle Brothers
-Tony Pollard,4708,2404,51,RB,61,-10,3556,50,-109.5,2019,4,128,The Scene Worships Me
-T.J. Hockenson,4583,2510,58,TE,58,0,3546.5,51,-9.5,2019,1,8,JoJos Bizzare Massage
-Jordan Addison,4694,2262,53,WR,66,-13,3478,52,-68.5,NA,NA,NA,The Serle Brothers
-Brandon Aiyuk,4590,2202,57,WR,70,-13,3396,53,-82,2020,1,25,Howling for Chubb
-D.J. Moore,4281,2423,64,WR,60,4,3352,54,-44,2018,1,24,The Scene Worships Me
-Quentin Johnston,4523,2178,59,WR,71,-12,3350.5,55,-1.5,NA,NA,NA,Howling for Chubb
-Jerry Jeudy,4513,2136,61,WR,73,-12,3324.5,56,-26,2020,1,15,Pablo and the Stallions
-Christian Watson,4517,2089,60,WR,75,-15,3303,57,-21.5,2022,2,34,JoJos Bizzare Massage
-Javonte Williams,4224,2355,65,RB,62,3,3289.5,58,-13.5,2021,2,35,The Millennium Beer
-Treylon Burks,4374,2139,62,WR,72,-10,3256.5,59,-33,2022,1,18,JoJos Bizzare Massage
-Derrick Henry,3952,2526,81,RB,57,24,3239,60,-17.5,2016,2,45,JoJos Bizzare Massage
-J.K. Dobbins,4068,2295,71,RB,65,6,3181.5,61,-57.5,2020,2,55,Pablo and the Stallions
-Kenny Pickett,4052,2248,74,QB,67,7,3150,62,-31.5,2022,1,20,Pablo and the Stallions
-Jared Goff,3987,2301,80,QB,64,16,3144,63,-6,2016,1,1,A Team of Chance
-Jahan Dotson,4342,1918,63,WR,91,-28,3130,64,-14,2022,1,16,JoJos Bizzare Massage
-Terry McLaurin,4052,2135,73,WR,74,-1,3093.5,65,-36.5,2019,3,76,DirtyDan113
-Jameson Williams,4204,1972,66,WR,85,-19,3088,66,-5.5,2022,1,12,Howling for Chubb
-Deebo Samuel,4089,2066,67,WR,77,-10,3077.5,67,-10.5,2019,2,36,DirtyDan113
-Calvin Ridley,4014,2060,78,WR,78,0,3037,68,-40.5,NA,NA,NA,HorseWomen of Color
-Michael Pittman,4088,1926,68,WR,89,-21,3007,69,-30,2020,2,34,Kissy Boy Jones
-Dameon Pierce,3937,2058,83,RB,79,4,2997.5,70,-9.5,2022,4,107,The Scene Worships Me
-Kirk Cousins,3654,2302,95,QB,63,32,2978,71,-19.5,2012,4,102,JoJos Bizzare Massage
-George Kittle,3907,2047,84,TE,81,3,2977,72,-1,2017,5,146,DirtyDan113
-Zay Flowers,4023,1927,77,WR,87,-10,2975,73,-2,NA,NA,NA,Kissy Boy Jones
-Chris Godwin,4060,1890,72,WR,94,-22,2975,74,0,2017,3,84,The Scene Worships Me
-George Pickens,4076,1867,70,WR,96,-26,2971.5,75,-3.5,2022,2,52,Howling for Chubb
-Jordan Love,3950,1926,82,QB,88,-6,2938,76,-33.5,2020,1,26,The Scene Worships Me
-Marquise Brown,3857,1969,87,WR,86,1,2913,77,-25,2019,1,25,HorseWomen of Color
-D'Andre Swift,3640,2089,96,RB,76,20,2864.5,78,-48.5,2020,2,35,Howling for Chubb
-Geno Smith,3713,1994,92,QB,84,8,2853.5,79,-11,2013,2,39,Kissy Boy Jones
-Dalton Kincaid,4000,1696,79,TE,106,-27,2848,80,-5.5,NA,NA,NA,A Team of Chance
-Dallas Goedert,3774,1914,90,TE,92,-2,2844,81,-4,2018,2,49,A Team of Chance
-Russell Wilson,3450,2237,101,QB,68,33,2843.5,82,-0.5,2012,3,75,The Serle Brothers
-Brock Purdy,3688,1856,94,QB,97,-3,2772,83,-71.5,2022,7,262,Kissy Boy Jones
-Amari Cooper,3775,1762,89,WR,101,-12,2768.5,84,-3.5,2015,1,4,JoJos Bizzare Massage
-Christian Kirk,3874,1638,85,WR,109,-24,2756,85,-12.5,2018,2,47,The Millennium Beer
-Diontae Johnson,3861,1593,86,WR,113,-27,2727,86,-29,2019,3,66,JoJos Bizzare Massage
-Cam Akers,3566,1878,97,RB,95,2,2722,87,-5,2020,2,52,JoJos Bizzare Massage
-Miles Sanders,3700,1723,93,RB,104,-11,2711.5,88,-10.5,2019,2,53,DirtyDan113
-Zach Charbonnet,3848,1542,88,RB,117,-29,2695,89,-16.5,NA,NA,NA,Howling for Chubb
-Pat Freiermuth,3556,1726,98,TE,103,-5,2641,90,-54,2021,2,55,The Millennium Beer
-Joe Mixon,3420,1833,104,RB,98,6,2626.5,91,-14.5,2017,2,48,JoJos Bizzare Massage
-Aaron Rodgers,3198,2040,115,QB,83,32,2619,92,-7.5,NA,NA,NA,The Scene Worships Me
-Derek Carr,3445,1778,103,QB,99,4,2611.5,93,-7.5,2014,2,36,JoJos Bizzare Massage
-Aaron Jones,3465,1730,100,RB,102,-2,2597.5,94,-14,2017,5,182,The Scene Worships Me
-Trey Lance,3257,1921,111,QB,90,21,2589,95,-8.5,2021,1,3,The Millennium Beer
-Rachaad White,3495,1625,99,RB,110,-11,2560,96,-29,2022,3,91,The Millennium Beer
-Devon Achane,3400,1572,105,RB,115,-10,2486,97,-74,NA,NA,NA,HorseWomen of Color
-Keenan Allen,3179,1700,118,WR,105,13,2439.5,98,-46.5,2013,3,76,JoJos Bizzare Massage
-Alexander Mattison,3450,1400,102,RB,128,-26,2425,99,-14.5,2019,3,102,The Serle Brothers
-James Cook,3309,1473,107,RB,122,-15,2391,100,-34,2022,2,63,A Team of Chance
-Mike Evans,3213,1506,114,WR,119,-5,2359.5,101,-31.5,2014,1,7,HorseWomen of Color
-Mac Jones,3231,1464,113,QB,123,-10,2347.5,102,-12,2021,1,15,A Team of Chance
-Sam LaPorta,3309,1376,108,TE,130,-22,2342.5,103,-5,NA,NA,NA,Howling for Chubb
-Isiah Pacheco,3359,1291,106,RB,136,-30,2325,104,-17.5,2022,7,251,DirtyDan113
-Kadarius Toney,3196,1393,116,WR,129,-13,2294.5,105,-30.5,2021,1,20,Pablo and the Stallions
-Kendre Miller,3302,1271,110,RB,139,-29,2286.5,106,-8,NA,NA,NA,Pablo and the Stallions
-Rashod Bateman,3304,1246,109,WR,140,-31,2275,107,-11.5,2021,1,27,The Serle Brothers
-Desmond Ridder,3049,1494,124,QB,121,3,2271.5,108,-3.5,2022,3,74,The Millennium Beer
-David Montgomery,3163,1361,119,RB,133,-14,2262,109,-9.5,2019,3,73,Kissy Boy Jones
-Sam Howell,2915,1596,131,QB,112,19,2255.5,110,-6.5,2022,5,144,Howling for Chubb
-DeAndre Hopkins,3083,1423,122,WR,126,-4,2253,111,-2.5,2013,1,27,DirtyDan113
-Darren Waller,2917,1578,130,TE,114,16,2247.5,112,-5.5,2015,6,204,Howling for Chubb
-Michael Mayer,3072,1405,123,TE,127,-4,2238.5,113,-9,NA,NA,NA,Kissy Boy Jones
-Mike Williams,3153,1288,120,WR,137,-17,2220.5,114,-18,2017,1,7,Kissy Boy Jones
-Dalvin Cook,2866,1537,132,RB,118,14,2201.5,115,-19,2017,2,41,Kissy Boy Jones
-Greg Dulcich,3018,1366,125,TE,132,-7,2192,116,-9.5,2022,3,80,JoJos Bizzare Massage
-Elijah Moore,3246,1086,112,WR,156,-44,2166,117,-26,2021,2,34,The Scene Worships Me
-Alvin Kamara,2855,1456,133,RB,124,9,2155.5,118,-10.5,2017,3,67,Pablo and the Stallions
-AJ Dillon,3004,1284,126,RB,138,-12,2144,119,-11.5,2020,2,62,The Millennium Beer
-Antonio Gibson,2955,1143,129,RB,148,-19,2049,120,-95,2020,3,66,The Serle Brothers
-Jonathan Mingo,2993,1099,127,WR,154,-27,2046,121,-3,NA,NA,NA,The Serle Brothers
-Matthew Stafford,2563,1505,150,QB,120,30,2034,122,-12,NA,NA,NA,The Millennium Beer
-Tyler Lockett,2854,1143,134,WR,147,-13,1998.5,123,-35.5,2015,3,69,Howling for Chubb
-Chigoziem Okonkwo,2989,999,128,TE,164,-36,1994,124,-4.5,2022,4,143,The Scene Worships Me
-Brian Robinson,2816,1082,135,RB,157,-22,1949,125,-45,NA,NA,NA,DirtyDan113
-Will Levis,2707,1130,139,QB,151,-12,1918.5,126,-30.5,NA,NA,NA,JoJos Bizzare Massage
-Skyy Moore,2690,1133,141,WR,149,-8,1911.5,127,-7,2022,2,54,HorseWomen of Color
-David Njoku,2660,1148,143,TE,146,-3,1904,128,-7.5,2017,1,29,The Serle Brothers
-James Conner,2630,1166,146,RB,144,2,1898,129,-6,2017,3,105,Kissy Boy Jones
-Evan Engram,2613,1153,149,TE,145,4,1883,130,-15,2017,1,23,Kissy Boy Jones
-Roschon Johnson,2735,981,137,RB,167,-30,1858,131,-25,NA,NA,NA,HorseWomen of Color
-Gabriel Davis,2697,986,140,WR,165,-25,1841.5,132,-16.5,2020,4,128,Howling for Chubb
-Romeo Doubs,2639,1040,145,WR,160,-15,1839.5,133,-2,2022,4,132,Kissy Boy Jones
-JuJu Smith-Schuster,2516,1091,152,WR,155,-3,1803.5,134,-36,2017,2,62,Howling for Chubb
-Khalil Herbert,2618,983,147,RB,166,-19,1800.5,135,-3,2021,6,217,Kissy Boy Jones
-Jimmy Garoppolo,2212,1304,174,QB,134,40,1758,136,-42.5,2014,2,62,Howling for Chubb
-Marvin Mims,2671,822,142,WR,188,-46,1746.5,137,-11.5,NA,NA,NA,The Millennium Beer
-Cole Kmet,2395,1065,157,TE,159,-2,1730,138,-16.5,2020,2,43,JoJos Bizzare Massage
-Tank Bigsby,2540,891,151,RB,177,-26,1715.5,139,-14.5,NA,NA,NA,A Team of Chance
-Brandin Cooks,2386,1006,159,WR,163,-4,1696,140,-19.5,2014,1,20,HorseWomen of Color
-Rashee Rice,2616,727,148,WR,204,-56,1671.5,141,-24.5,NA,NA,NA,Howling for Chubb
-John Metchie,2403,897,156,WR,175,-19,1650,142,-21.5,NA,NA,NA,The Scene Worships Me
-Alec Pierce,2364,929,161,WR,172,-11,1646.5,143,-3.5,2022,2,53,Pablo and the Stallions
-Josh Downs,2466,808,153,WR,189,-36,1637,144,-9.5,NA,NA,NA,JoJos Bizzare Massage
-Trey McBride,2388,881,158,TE,180,-22,1634.5,145,-2.5,2022,2,55,The Serle Brothers
-Dalton Schultz,2234,1022,172,TE,161,11,1628,146,-6.5,2018,4,137,The Scene Worships Me
-Rondale Moore,2287,967,167,WR,169,-2,1627,147,-1,2021,2,49,Howling for Chubb
-Tyjae Spears,2430,735,155,RB,201,-46,1582.5,148,-44.5,NA,NA,NA,Pablo and the Stallions
-Courtland Sutton,2252,890,170,WR,178,-8,1571,149,-11.5,2018,2,40,HorseWomen of Color
-Jakobi Meyers,2265,873,168,WR,182,-14,1569,150,-2,NA,NA,NA,Pablo and the Stallions
-Tyler Allgeier,2242,895,171,RB,176,-5,1568.5,151,-0.5,2022,5,151,Howling for Chubb
-Elijah Mitchell,2174,946,179,RB,170,9,1560,152,-8.5,2021,6,194,DirtyDan113
-Rashaad Penny,2186,912,176,RB,173,3,1549,153,-11,2018,1,27,DirtyDan113
-Darnell Mooney,2263,781,169,WR,195,-26,1522,154,-27,2020,5,173,DirtyDan113
-Wan'Dale Robinson,2324,720,164,WR,206,-42,1522,155,0,2022,2,43,The Millennium Beer
-Nico Collins,2325,684,163,WR,214,-51,1504.5,156,-17.5,2021,3,89,A Team of Chance
-Jayden Reed,2375,609,160,WR,226,-66,1492,157,-12.5,NA,NA,NA,The Serle Brothers
-Samaje Perine,2184,789,177,RB,193,-16,1486.5,158,-5.5,2017,4,114,The Serle Brothers
-Luke Musgrave,2233,733,173,TE,202,-29,1483,159,-3.5,NA,NA,NA,The Millennium Beer
-Jamaal Williams,2205,759,175,RB,197,-22,1482,160,-1,2017,4,134,Kissy Boy Jones
-Isaiah Likely,2182,781,178,TE,194,-16,1481.5,161,-0.5,2022,4,139,HorseWomen of Color
-Jalin Hyatt,2304,599,165,WR,228,-63,1451.5,162,-30,NA,NA,NA,Pablo and the Stallions
-Ryan Tannehill,1740,1132,200,QB,150,50,1436,163,-15.5,2012,1,8,The Scene Worships Me
-Damien Harris,2008,841,183,RB,185,-2,1424.5,164,-11.5,2019,3,87,A Team of Chance
-Jaylen Warren,2099,730,181,RB,203,-22,1414.5,165,-10,NA,NA,NA,The Serle Brothers
-Allen Lazard,1956,798,184,WR,191,-7,1377,166,-37.5,NA,NA,NA,DirtyDan113
-Tyler Boyd,1913,793,187,WR,192,-5,1353,167,-24,2016,2,55,Kissy Boy Jones
-Michael Thomas,1816,889,193,WR,179,14,1352.5,168,-0.5,2016,2,47,HorseWomen of Color
-Devin Singletary,1878,711,188,RB,209,-21,1294.5,169,-58,2019,3,74,JoJos Bizzare Massage
-Hendon Hooker,2067,518,182,QB,243,-61,1292.5,170,-2,NA,NA,NA,Howling for Chubb
-Baker Mayfield,1684,881,207,QB,181,26,1282.5,171,-10,2018,1,1,HorseWomen of Color
-Rashid Shaheed,1944,554,186,WR,239,-53,1249,172,-33.5,NA,NA,NA,The Millennium Beer
-Odell Beckham,1739,739,201,WR,200,1,1239,173,-10,NA,NA,NA,A Team of Chance
-D.J. Chark,1826,652,191,WR,219,-28,1239,174,0,2018,2,61,Pablo and the Stallions
-Chase Brown,1953,510,185,RB,248,-63,1231.5,175,-7.5,NA,NA,NA,HorseWomen of Color
-Michael Gallup,1877,577,189,WR,234,-45,1227,176,-4.5,2018,3,81,HorseWomen of Color
-Donovan Peoples-Jones,1871,569,190,WR,237,-47,1220,177,-7,2020,6,187,Kissy Boy Jones
-Dawson Knox,1707,696,203,TE,211,-8,1201.5,178,-18.5,2019,3,96,Pablo and the Stallions
-Jerome Ford,1798,587,194,RB,231,-37,1192.5,179,-9,2022,5,156,The Scene Worships Me
-Juwan Johnson,1752,631,198,TE,221,-23,1191.5,180,-1,NA,NA,NA,A Team of Chance
-Irv Smith Jr.,1743,627,199,TE,223,-24,1185,181,-6.5,2019,2,50,Pablo and the Stallions
-Terrace Marshall,1727,625,202,WR,224,-22,1176,182,-9,NA,NA,NA,Kissy Boy Jones
-D'Onta Foreman,1614,701,216,RB,210,6,1157.5,183,-18.5,2017,3,89,A Team of Chance
-Mike Gesicki,1583,721,220,TE,205,15,1152,184,-5.5,2018,2,42,Pablo and the Stallions
-Tyler Higbee,1431,836,233,TE,186,47,1133.5,185,-18.5,2016,4,110,Kissy Boy Jones
-Noah Fant,1565,686,223,TE,213,10,1125.5,186,-8,2019,1,20,DirtyDan113
-Chase Claypool,1681,567,208,WR,238,-30,1124,187,-1.5,2020,2,49,The Scene Worships Me
-Jelani Woods,1572,656,222,TE,218,4,1114,188,-10,2022,3,73,The Millennium Beer
-Kenneth Gainwell,1676,551,209,RB,240,-31,1113.5,189,-0.5,2021,5,150,The Millennium Beer
-Isaiah Hodgins,1770,455,197,WR,260,-63,1112.5,190,-1,2020,6,207,The Scene Worships Me
-Zamir White,1649,575,211,RB,235,-24,1112,191,-0.5,2022,4,122,HorseWomen of Color
-Clyde Edwards-Helaire,1534,666,225,RB,216,9,1100,192,-12,2020,1,32,Pablo and the Stallions
-Cedric Tillman,1818,354,192,WR,274,-82,1086,193,-14,NA,NA,NA,The Serle Brothers
-Curtis Samuel,1605,541,218,WR,241,-23,1073,194,-13,2017,2,40,The Scene Worships Me
-Daniel Bellinger,1539,583,224,TE,233,-9,1061,195,-12,2022,4,112,NA
-Luke Schoonmaker,1688,421,206,TE,267,-61,1054.5,196,-6.5,NA,NA,NA,Pablo and the Stallions
-Israel Abanikanda,1789,304,195,RB,279,-84,1046.5,197,-8,NA,NA,NA,HorseWomen of Color
-Hunter Renfrow,1587,505,219,WR,251,-32,1046,198,-0.5,2019,5,149,Howling for Chubb
-Parris Campbell,1496,593,228,WR,229,-1,1044.5,199,-1.5,2019,2,59,The Serle Brothers
-Michael Wilson,1778,311,196,WR,277,-81,1044.5,200,0,NA,NA,NA,Kissy Boy Jones
-Tyquan Thornton,1648,437,213,WR,264,-51,1042.5,201,-2,2022,2,50,The Serle Brothers
-Khalil Shakir,1610,460,217,WR,258,-41,1035,202,-7.5,2022,5,148,The Millennium Beer
-Ezekiel Elliott,1308,741,246,RB,199,47,1024.5,203,-10.5,2016,1,4,DirtyDan113
-Gerald Everett,1383,657,239,TE,217,22,1020,204,-4.5,2017,2,44,A Team of Chance
-Cade Otton,1408,608,238,TE,227,11,1008,205,-12,2022,4,106,The Millennium Beer
-Zay Jones,1578,419,221,WR,268,-47,998.5,206,-9.5,2017,2,37,DirtyDan113
-K.J. Osborn,1450,511,230,WR,247,-17,980.5,207,-18,2020,5,176,The Scene Worships Me
-Josh Palmer,1511,444,227,WR,262,-35,977.5,208,-3,2021,3,77,The Millennium Beer
-Puka Nacua,1649,301,212,WR,283,-71,975,209,-2.5,NA,NA,NA,NA
-Van Jefferson,1376,571,240,WR,236,4,973.5,210,-1.5,2020,2,57,The Scene Worships Me
-Jerick McKinnon,1435,512,231,RB,246,-15,973.5,211,0,2014,3,96,The Scene Worships Me
-Zach Evans,1701,227,204,RB,295,-91,964,212,-9.5,NA,NA,NA,The Serle Brothers
-Adam Thielen,1332,591,242,WR,230,12,961.5,213,-2.5,NA,NA,NA,A Team of Chance
-DeWayne McBride,1633,264,214,RB,289,-75,948.5,214,-13,NA,NA,NA,Pablo and the Stallions
-Jake Ferguson,1411,483,237,TE,255,-18,947,215,-1.5,2022,4,129,JoJos Bizzare Massage
-Chuba Hubbard,1411,450,235,RB,261,-26,930.5,216,-16.5,2021,4,126,JoJos Bizzare Massage
-Kareem Hunt,1240,513,253,RB,245,8,876.5,217,-54,2017,3,86,JoJos Bizzare Massage
-Justyn Ross,1318,433,244,WR,265,-21,875.5,218,-1,NA,NA,NA,The Millennium Beer
-Kyle Trask,1235,506,254,QB,250,4,870.5,219,-5,2021,2,64,HorseWomen of Color
-Pierre Strong Jr.,1320,380,243,RB,273,-30,850,220,-20.5,NA,NA,NA,A Team of Chance
-Darnell Washington,1431,219,234,TE,296,-62,825,221,-25,NA,NA,NA,NA
-Jeffery Wilson,1200,429,258,RB,266,-8,814.5,222,-10.5,NA,NA,NA,HorseWomen of Color
-Zach Wilson,1116,483,267,QB,254,13,799.5,223,-15,2021,1,2,JoJos Bizzare Massage
-Hayden Hurst,1047,530,277,TE,242,35,788.5,224,-11,2018,1,25,DirtyDan113
-Keaontay Ingram,1183,393,261,RB,271,-10,788,225,-0.5,2022,6,201,JoJos Bizzare Massage
-Isaiah Spiller,1234,328,255,RB,276,-21,781,226,-7,2022,4,123,Kissy Boy Jones
-Michael Carter,1254,307,251,RB,278,-27,780.5,227,-0.5,2021,4,107,Kissy Boy Jones
-Hunter Henry,1070,479,273,TE,257,16,774.5,228,-6,2016,2,35,DirtyDan113
-Sam Darnold,1230,304,256,QB,280,-24,767,229,-7.5,2018,1,3,The Serle Brothers
-Zach Ertz,1058,459,274,TE,259,15,758.5,230,-8.5,2013,2,35,Kissy Boy Jones
-Sean Tucker,1344,157,241,RB,300,-59,750.5,231,-8,NA,NA,NA,Pablo and the Stallions
-Deuce Vaughn,1434,61,232,RB,327,-95,747.5,232,-3,NA,NA,NA,The Millennium Beer
-Tim Patrick,1190,301,260,WR,284,-24,745.5,233,-2,NA,NA,NA,The Serle Brothers
-Gardner Minshew,978,508,284,QB,249,35,743,234,-2.5,NA,NA,NA,JoJos Bizzare Massage
-Leonard Fournette,948,518,288,RB,244,44,733,235,-10,2017,1,4,Howling for Chubb
-Mecole Hardman,1198,264,259,WR,290,-31,731,236,-2,2019,2,56,Kissy Boy Jones
-Malik Davis,1153,289,264,RB,286,-22,721,237,-10,NA,NA,NA,NA
-Ty Chandler,1156,281,262,RB,288,-26,718.5,238,-2.5,2022,5,169,NA
-Raheem Mostert,1051,384,275,RB,272,3,717.5,239,-1,NA,NA,NA,DirtyDan113
-Tucker Kraft,1283,144,248,TE,304,-56,713.5,240,-4,NA,NA,NA,The Serle Brothers
-Darius Slayton,1253,156,252,WR,301,-49,704.5,241,-9,2019,5,171,NA
-Greg Dortch,1269,111,249,WR,312,-63,690,242,-14.5,NA,NA,NA,The Scene Worships Me
-Bailey Zappe,1111,263,268,QB,291,-23,687,243,-3,2022,4,137,A Team of Chance
-Gus Edwards,1046,302,278,RB,282,-4,674,244,-13,NA,NA,NA,A Team of Chance
-Marquez Valdes-Scantling,1154,153,263,WR,302,-39,653.5,245,-20.5,2018,5,174,Kissy Boy Jones
-Xavier Hutchinson,1227,68,257,WR,323,-66,647.5,246,-6,NA,NA,NA,NA
-Tyler Conklin,932,342,290,TE,275,15,637,247,-10.5,2018,5,157,Howling for Chubb
-Jacoby Brissett,1028,240,279,QB,293,-14,634,248,-3,2016,3,91,Pablo and the Stallions
-Kayshon Boutte,1089,177,270,WR,298,-28,633,249,-1,NA,NA,NA,A Team of Chance
-Kyren Williams,1135,121,266,RB,309,-43,628,250,-5,2022,5,164,NA
-Kyle Philips,1078,174,272,WR,299,-27,626,251,-2,2022,5,163,The Millennium Beer
-Malik Willis,777,439,309,QB,263,46,608,252,-18,2022,3,86,Howling for Chubb
-Mike White,722,482,318,QB,256,62,602,253,-6,2018,5,171,A Team of Chance
-Eric Gray,1051,129,276,RB,307,-31,590,254,-12,NA,NA,NA,A Team of Chance
-Stetson Bennett,1086,90,271,QB,319,-48,588,255,-2,NA,NA,NA,Howling for Chubb
-Robert Woods,872,293,297,WR,285,12,582.5,256,-5.5,2013,2,41,A Team of Chance
-Evan Hull,1140,22,265,RB,341,-76,581,257,-1.5,NA,NA,NA,The Millennium Beer
-Tyler Huntley,965,138,286,QB,305,-19,551.5,258,-29.5,NA,NA,NA,A Team of Chance
-Foster Moreau,944,147,289,TE,303,-14,545.5,259,-6,2019,4,137,NA
-Laviska Shenault,1004,85,282,WR,320,-38,544.5,260,-1,NA,NA,NA,The Scene Worships Me
-Allen Robinson,787,282,307,WR,287,20,534.5,261,-10,2014,2,61,HorseWomen of Color
-Taysom Hill,822,247,303,TE,292,11,534.5,262,0,NA,NA,NA,NA
-Cordarrelle Patterson,763,303,310,RB,281,29,533,263,-1.5,2013,1,29,DirtyDan113
-Tyler Scott,1028,21,280,WR,343,-63,524.5,264,-8.5,NA,NA,NA,Pablo and the Stallions
-Chris Rodriguez,1015,8,281,RB,346,-65,511.5,265,-13,NA,NA,NA,NA
-Zonovan Knight,898,119,293,RB,310,-17,508.5,266,-3,NA,NA,NA,NA
-Kevin Harris,959,53,287,RB,330,-43,506,267,-2.5,2022,6,183,NA
-David Bell,904,75,292,WR,322,-30,489.5,268,-16.5,2022,3,99,Kissy Boy Jones
-DeVante Parker,848,99,300,WR,316,-16,473.5,269,-16,2015,1,14,NA
-Noah Gray,867,68,298,TE,324,-26,467.5,270,-6,2021,5,162,The Serle Brothers
-A.T. Perry,897,36,294,WR,333,-39,466.5,271,-1,NA,NA,NA,NA
-Taylor Heinicke,682,237,323,QB,294,29,459.5,272,-7,NA,NA,NA,NA
-Calvin Austin,821,92,304,WR,318,-14,456.5,273,-3,NA,NA,NA,NA
-Albert Okwuegbunam,886,27,296,TE,337,-41,456.5,274,0,2020,4,118,DirtyDan113
-Deneric Prince,906,7,291,RB,348,-57,456.5,275,0,NA,NA,NA,NA
-Joshua Kelley,779,121,308,RB,308,0,450,276,-6.5,2020,4,112,Pablo and the Stallions
-Clayton Tune,843,32,301,QB,335,-34,437.5,277,-12.5,NA,NA,NA,NA
-Corey Davis,818,54,305,WR,329,-24,436,278,-1.5,2017,1,5,NA
-Jalen Tolbert,795,22,306,WR,342,-36,408.5,279,-27.5,2022,3,88,The Millennium Beer
-Richie James,749,56,313,WR,328,-15,402.5,280,-6,2018,7,240,NA
-Jameis Winston,644,101,331,QB,314,17,372.5,281,-30,2015,1,1,NA
-Devin Duvernay,736,8,315,WR,347,-32,372,282,-0.5,2020,3,92,NA
-Brenton Strange,676,61,325,TE,326,-1,368.5,283,-3.5,NA,NA,NA,NA
-Davis Mills,686,51,322,QB,331,-9,368.5,284,0,2021,3,67,NA
-Aidan O'Connell,707,0,319,QB,350,-31,353.5,285,-15,NA,NA,NA,NA
-Jarrett Stidham,648,24,329,QB,339,-10,336,286,-17.5,2019,4,133,The Millennium Beer
-Zack Moss,574,96,338,RB,317,21,335,287,-1,2020,3,86,DirtyDan113
-Nyheim Hines,629,5,332,RB,349,-17,317,288,-18,2018,4,104,NA
-Russell Gage,579,9,336,WR,345,-9,294,289,-23,2018,6,194,NA
-Jordan Mason,543,36,343,RB,334,9,289.5,290,-4.5,NA,NA,NA,NA
-Chase Edmonds,440,101,358,RB,315,43,270.5,291,-19,2018,4,134,NA
-Hassan Haskins,436,66,359,RB,325,34,251,292,-19.5,2022,4,131,The Scene Worships Me
-Logan Thomas,344,138,373,TE,306,67,241,293,-10,2014,4,120,NA
-Austin Hooper,434,38,360,TE,332,28,236,294,-5,2016,3,81,HorseWomen of Color
-Marcus Mariota,325,109,379,QB,313,66,217,295,-19,2015,1,2,NA
-Ronald Jones,381,29,368,RB,336,32,205,296,-12,NA,NA,NA,NA
-Robert Tonyan,346,26,372,TE,338,34,186,297,-19,NA,NA,NA,NA
-Colt McCoy,166,183,443,QB,297,146,174.5,298,-11.5,2010,3,85,NA
-James Robinson,189,117,440,RB,311,129,153,299,-21.5,NA,NA,NA,DirtyDan113
-Andy Dalton,102,80,460,QB,321,139,91,300,-62,2011,2,35,HorseWomen of Color
-Latavius Murray,107,14,459,RB,344,115,60.5,301,-30.5,2013,6,181,NA
-Carson Wentz,0,24,476,QB,340,136,12,302,-48.5,2016,1,2,NA
+Josh Allen,10000,10000,1,QB,1,0,10000,1,NA,2018,1,7,The Scene Worships Me
+Patrick Mahomes,9998,9790,2,QB,2,0,9894,2,-106,2017,1,10,Pablo and the Stallions
+C.J. Stroud,9672,8492,3,QB,4,-1,9082,3,-812,NA,NA,NA,Howling for Chubb
+Justin Jefferson,9593,8509,4,WR,3,1,9051,4,-31,2020,1,22,The Serle Brothers
+Ja'Marr Chase,8704,7739,5,WR,8,-3,8221.5,5,-829.5,2021,1,5,The Serle Brothers
+CeeDee Lamb,8611,7820,6,WR,6,0,8215.5,6,-6,2020,1,17,A Team of Chance
+Lamar Jackson,8520,7809,7,QB,7,0,8164.5,7,-51,2018,1,32,DirtyDan113
+Jalen Hurts,8264,7872,8,QB,5,3,8068,8,-96.5,2020,2,53,A Team of Chance
+Joe Burrow,7993,7043,9,QB,9,0,7518,9,-550,2020,1,1,JoJos Bizzare Massage
+Amon-Ra St. Brown,7766,6721,10,WR,10,0,7243.5,10,-274.5,2021,4,112,The Millennium Beer
+Bijan Robinson,7614,6463,11,RB,12,-1,7038.5,11,-205,NA,NA,NA,Howling for Chubb
+Justin Herbert,7529,6523,14,QB,11,3,7026,12,-12.5,2020,1,6,Kissy Boy Jones
+Caleb Williams,7552,6015,12,QB,14,-2,6783.5,13,-242.5,NA,NA,NA,NA
+Marvin Harrison Jr.,7529,5834,13,WR,16,-3,6681.5,14,-102,NA,NA,NA,NA
+Anthony Richardson,7398,5882,15,QB,15,0,6640,15,-41.5,NA,NA,NA,The Serle Brothers
+Breece Hall,6976,5750,19,RB,17,2,6363,16,-277,2022,2,36,The Scene Worships Me
+Jahmyr Gibbs,6986,5295,18,RB,20,-2,6140.5,17,-222.5,NA,NA,NA,HorseWomen of Color
+Jordan Love,7008,5232,17,QB,23,-6,6120,18,-20.5,2020,1,26,The Scene Worships Me
+Puka Nacua,6955,5256,20,WR,22,-2,6105.5,19,-14.5,NA,NA,NA,NA
+Christian McCaffrey,6348,5389,25,RB,19,6,5868.5,20,-237,2017,1,8,The Scene Worships Me
+A.J. Brown,6414,5258,24,WR,21,3,5836,21,-32.5,2019,2,51,JoJos Bizzare Massage
+Garrett Wilson,6629,5008,21,WR,25,-4,5818.5,22,-17.5,2022,1,10,Pablo and the Stallions
+Kyler Murray,6472,5122,23,QB,24,-1,5797,23,-21.5,2019,1,1,The Serle Brothers
+Sam LaPorta,6587,4892,22,TE,26,-4,5739.5,24,-57.5,NA,NA,NA,Howling for Chubb
+Trevor Lawrence,6210,4717,27,QB,27,0,5463.5,25,-276,2021,1,1,HorseWomen of Color
+Malik Nabers,6285,4469,26,WR,29,-3,5377,26,-86.5,NA,NA,NA,NA
+Chris Olave,5925,4319,29,WR,31,-2,5122,27,-255,2022,1,11,Kissy Boy Jones
+Drake London,5979,4154,28,WR,36,-8,5066.5,28,-55.5,2022,1,8,A Team of Chance
+Tyreek Hill,5609,4454,33,WR,30,3,5031.5,29,-35,2016,5,165,Kissy Boy Jones
+Brock Purdy,5658,4223,31,QB,34,-3,4940.5,30,-91,2022,7,262,Kissy Boy Jones
+Jonathan Taylor,5564,4299,37,RB,32,5,4931.5,31,-9,2020,2,41,The Millennium Beer
+Dak Prescott,5578,4239,35,QB,33,2,4908.5,32,-23,2016,4,135,DirtyDan113
+Jayden Daniels,5654,4149,32,QB,37,-5,4901.5,33,-7,NA,NA,NA,NA
+Tua Tagovailoa,5393,4117,43,QB,38,5,4755,34,-146.5,2020,1,5,The Millennium Beer
+Drake Maye,5476,3964,38,QB,39,-1,4720,35,-35,NA,NA,NA,NA
+Jaylen Waddle,5581,3778,34,WR,42,-8,4679.5,36,-40.5,2021,1,6,DirtyDan113
+Brandon Aiyuk,5664,3686,30,WR,45,-15,4675,37,-4.5,2020,1,25,Howling for Chubb
+Rome Odunze,5476,3578,39,WR,50,-11,4527,38,-148,NA,NA,NA,NA
+Nico Collins,5458,3531,40,WR,52,-12,4494.5,39,-32.5,2021,3,89,A Team of Chance
+Michael Pittman,5359,3611,44,WR,49,-5,4485,40,-9.5,2020,2,34,Kissy Boy Jones
+Travis Etienne,5127,3782,52,RB,41,11,4454.5,41,-30.5,2021,1,25,JoJos Bizzare Massage
+Kyren Williams,5211,3664,47,RB,47,0,4437.5,42,-17,2022,5,164,NA
+DeVonta Smith,5453,3376,41,WR,55,-14,4414.5,43,-23,2021,1,10,Pablo and the Stallions
+De'Von Achane,5281,3536,45,RB,51,-6,4408.5,44,-6,NA,NA,NA,NA
+Trey McBride,5176,3635,50,TE,48,2,4405.5,45,-3,2022,2,55,The Serle Brothers
+Brock Bowers,5124,3677,54,TE,46,8,4400.5,46,-5,NA,NA,NA,NA
+Saquon Barkley,5047,3705,57,RB,44,13,4376,47,-24.5,2018,1,2,HorseWomen of Color
+Kyle Pitts,5196,3401,48,TE,54,-6,4298.5,48,-77.5,2021,1,4,Pablo and the Stallions
+D.J. Moore,5191,3330,49,WR,56,-7,4260.5,49,-38,2018,1,24,The Scene Worships Me
+Tee Higgins,5157,3192,51,WR,61,-10,4174.5,50,-86,2020,2,33,A Team of Chance
+Tank Dell,5219,3112,46,WR,63,-17,4165.5,51,-9,NA,NA,NA,NA
+DK Metcalf,5048,3198,56,WR,59,-3,4123,52,-42.5,2019,2,64,The Millennium Beer
+Zay Flowers,5125,3083,53,WR,65,-12,4104,53,-19,NA,NA,NA,Kissy Boy Jones
+Jordan Addison,5084,3013,55,WR,67,-12,4048.5,54,-55.5,NA,NA,NA,The Serle Brothers
+T.J. Hockenson,4890,3194,58,TE,60,-2,4042,55,-6.5,2019,1,8,JoJos Bizzare Massage
+Mark Andrews,4740,3315,66,TE,57,9,4027.5,56,-14.5,2018,3,86,HorseWomen of Color
+Dalton Kincaid,4823,3188,60,TE,62,-2,4005.5,57,-22,NA,NA,NA,A Team of Chance
+Jared Goff,4761,3245,63,QB,58,5,4003,58,-2.5,2016,1,1,A Team of Chance
+Kenneth Walker III,4742,2963,65,RB,68,-3,3852.5,59,-150.5,NA,NA,NA,NA
+Jaxon Smith-Njigba,4802,2863,62,WR,69,-7,3832.5,60,-20,NA,NA,NA,Pablo and the Stallions
+George Pickens,4753,2849,64,WR,70,-6,3801,61,-31.5,2022,2,52,Howling for Chubb
+Josh Jacobs,4380,3083,69,RB,66,3,3731.5,62,-69.5,2019,1,24,Kissy Boy Jones
+Bryce Young,4369,2789,70,QB,72,-2,3579,63,-152.5,NA,NA,NA,Kissy Boy Jones
+J.J. McCarthy,4658,2445,67,QB,88,-21,3551.5,64,-27.5,NA,NA,NA,NA
+James Cook,4298,2724,73,RB,74,-1,3511,65,-40.5,2022,2,63,A Team of Chance
+Kirk Cousins,4230,2737,75,QB,73,2,3483.5,66,-27.5,2012,4,102,JoJos Bizzare Massage
+Rachaad White,4278,2653,74,RB,79,-5,3465.5,67,-18,2022,3,91,The Millennium Beer
+Brian Thomas Jr.,4169,2699,78,WR,75,3,3434,68,-31.5,NA,NA,NA,NA
+Deebo Samuel,4356,2500,71,WR,87,-16,3428,69,-6,2019,2,36,DirtyDan113
+Isiah Pacheco,4086,2567,80,RB,83,-3,3326.5,70,-101.5,2022,7,251,DirtyDan113
+Baker Mayfield,4092,2534,79,QB,84,-5,3313,71,-13.5,2018,1,1,HorseWomen of Color
+Jayden Reed,4340,2261,72,WR,94,-22,3300.5,72,-12.5,NA,NA,NA,The Serle Brothers
+Stefon Diggs,3914,2663,81,WR,78,3,3288.5,73,-12,2015,5,146,HorseWomen of Color
+Deshaun Watson,3815,2695,84,QB,76,8,3255,74,-33.5,2017,1,12,JoJos Bizzare Massage
+Rashee Rice,3749,2692,85,WR,77,8,3220.5,75,-34.5,NA,NA,NA,Howling for Chubb
+Davante Adams,3905,2507,82,WR,86,-4,3206,76,-14.5,2014,2,53,The Scene Worships Me
+Travis Kelce,3685,2636,86,TE,80,6,3160.5,77,-45.5,2013,3,63,HorseWomen of Color
+Mike Evans,3895,2414,83,WR,89,-6,3154.5,78,-6,2014,1,7,HorseWomen of Color
+Will Levis,3637,2340,87,QB,91,-4,2988.5,79,-166,NA,NA,NA,JoJos Bizzare Massage
+Justin Fields,3193,2527,112,QB,85,27,2860,80,-128.5,2021,1,11,Howling for Chubb
+D'Andre Swift,3547,2137,92,RB,98,-6,2842,81,-18,2020,2,35,Howling for Chubb
+Javonte Williams,3607,2041,88,RB,105,-17,2824,82,-18,2021,2,35,The Millennium Beer
+Xavier Worthy,3457,2169,97,WR,95,2,2813,83,-11,NA,NA,NA,NA
+Cooper Kupp,3547,2013,91,WR,106,-15,2780,84,-33,2017,3,69,The Scene Worships Me
+Derrick Henry,3366,2149,102,RB,97,5,2757.5,85,-22.5,2016,2,45,JoJos Bizzare Massage
+Christian Kirk,3497,2008,95,WR,107,-12,2752.5,86,-5,2018,2,47,The Millennium Beer
+Marquise Brown,3552,1936,90,WR,111,-21,2744,87,-8.5,2019,1,25,HorseWomen of Color
+George Kittle,3320,2118,107,TE,99,8,2719,88,-25,2017,5,146,DirtyDan113
+Amari Cooper,3483,1886,96,WR,116,-20,2684.5,89,-34.5,2015,1,4,JoJos Bizzare Massage
+Troy Franklin,3012,2346,130,WR,90,40,2679,90,-5.5,NA,NA,NA,NA
+Adonai Mitchell,3283,2068,109,WR,102,7,2675.5,91,-3.5,NA,NA,NA,NA
+Keenan Allen,3343,1987,105,WR,109,-4,2665,92,-10.5,2013,3,76,JoJos Bizzare Massage
+Joe Mixon,3244,2074,110,RB,101,9,2659,93,-6,2017,2,48,JoJos Bizzare Massage
+Terry McLaurin,3506,1788,93,WR,126,-33,2647,94,-12,2019,3,76,DirtyDan113
+Najee Harris,3234,2042,111,RB,104,7,2638,95,-9,2021,1,24,The Serle Brothers
+Diontae Johnson,3414,1840,99,WR,121,-22,2627,96,-11,2019,3,66,JoJos Bizzare Massage
+David Njoku,3378,1845,101,TE,119,-18,2611.5,97,-15.5,2017,1,29,The Serle Brothers
+Chris Godwin,3418,1786,98,WR,127,-29,2602,98,-9.5,2017,3,84,The Scene Worships Me
+David Montgomery,3365,1830,103,RB,122,-19,2597.5,99,-4.5,2019,3,73,Kissy Boy Jones
+Christian Watson,3409,1759,100,WR,131,-31,2584,100,-13.5,2022,2,34,JoJos Bizzare Massage
+Michael Penix Jr.,3360,1790,104,QB,125,-21,2575,101,-9,NA,NA,NA,NA
+Calvin Ridley,3333,1776,106,WR,129,-23,2554.5,102,-20.5,NA,NA,NA,HorseWomen of Color
+Jonathon Brooks,3155,1897,117,RB,114,3,2526,103,-28.5,NA,NA,NA,NA
+Evan Engram,3060,1989,125,TE,108,17,2524.5,104,-1.5,2017,1,23,Kissy Boy Jones
+Matthew Stafford,3135,1907,119,QB,113,6,2521,105,-3.5,NA,NA,NA,The Millennium Beer
+Tony Pollard,3182,1850,114,RB,118,-4,2516,106,-5,2019,4,128,The Scene Worships Me
+Ladd McConkey,3179,1804,115,WR,124,-9,2491.5,107,-24.5,NA,NA,NA,NA
+Alvin Kamara,3054,1890,126,RB,115,11,2472,108,-19.5,2017,3,67,Pablo and the Stallions
+Tyjae Spears,3312,1569,108,RB,143,-35,2440.5,109,-31.5,NA,NA,NA,Pablo and the Stallions
+Trey Benson,2903,1947,138,RB,110,28,2425,110,-15.5,NA,NA,NA,NA
+Jake Ferguson,3183,1652,113,TE,138,-25,2417.5,111,-7.5,2022,4,129,JoJos Bizzare Massage
+Rhamondre Stevenson,3109,1715,120,RB,133,-13,2412,112,-5.5,2021,4,120,A Team of Chance
+Bo Nix,2998,1772,131,QB,130,1,2385,113,-27,NA,NA,NA,NA
+Nick Chubb,2972,1783,134,RB,128,6,2377.5,114,-7.5,2018,2,35,Howling for Chubb
+Keon Coleman,2856,1873,141,WR,117,24,2364.5,115,-13,NA,NA,NA,NA
+Brian Robinson,3033,1681,129,RB,136,-7,2357,116,-7.5,NA,NA,NA,DirtyDan113
+Blake Corum,2993,1701,132,RB,135,-3,2347,117,-10,NA,NA,NA,NA
+Michael Mayer,3084,1563,123,TE,145,-22,2323.5,118,-23.5,NA,NA,NA,Kissy Boy Jones
+Josh Downs,3169,1458,116,WR,153,-37,2313.5,119,-10,NA,NA,NA,JoJos Bizzare Massage
+Aaron Rodgers,2780,1841,145,QB,120,25,2310.5,120,-3,NA,NA,NA,The Scene Worships Me
+Aaron Jones,2852,1734,142,RB,132,10,2293,121,-17.5,2017,5,182,The Scene Worships Me
+Dalton Schultz,2945,1624,136,TE,140,-4,2284.5,122,-8.5,2018,4,137,The Scene Worships Me
+Jameson Williams,3069,1493,124,WR,150,-26,2281,123,-3.5,2022,1,12,Howling for Chubb
+Cole Kmet,2965,1553,135,TE,147,-12,2259,124,-22,2020,2,43,JoJos Bizzare Massage
+Zamir White,3054,1451,127,RB,156,-29,2252.5,125,-6.5,2022,4,122,HorseWomen of Color
+Jaylen Warren,3036,1421,128,RB,157,-29,2228.5,126,-24,NA,NA,NA,The Serle Brothers
+Zach Charbonnet,2984,1468,133,RB,151,-18,2226,127,-2.5,NA,NA,NA,Howling for Chubb
+Romeo Doubs,3148,1294,118,WR,170,-52,2221,128,-5,2022,4,132,Kissy Boy Jones
+Jerry Jeudy,2931,1410,137,WR,158,-21,2170.5,129,-50.5,2020,1,15,Pablo and the Stallions
+James Conner,2743,1555,150,RB,146,4,2149,130,-21.5,2017,3,105,Kissy Boy Jones
+Derek Carr,2584,1654,161,QB,137,24,2119,131,-30,2014,2,36,JoJos Bizzare Massage
+Russell Wilson,2566,1649,163,QB,139,24,2107.5,132,-11.5,2012,3,75,The Serle Brothers
+Geno Smith,2750,1465,148,QB,152,-4,2107.5,133,0,2013,2,39,Kissy Boy Jones
+Kendre Miller,2869,1319,139,RB,167,-28,2094,134,-13.5,NA,NA,NA,Pablo and the Stallions
+Jahan Dotson,2859,1327,140,WR,165,-25,2093,135,-1,2022,1,16,JoJos Bizzare Massage
+Dallas Goedert,2731,1454,151,TE,155,-4,2092.5,136,-0.5,2018,2,49,A Team of Chance
+Pat Freiermuth,2837,1337,143,TE,164,-21,2087,137,-5.5,2021,2,55,The Millennium Beer
+Luke Musgrave,2809,1254,144,TE,172,-28,2031.5,138,-55.5,NA,NA,NA,The Millennium Beer
+Austin Ekeler,2352,1619,175,RB,142,33,1985.5,139,-46,NA,NA,NA,DirtyDan113
+Daniel Jones,2565,1405,164,QB,159,5,1985,140,-0.5,2019,1,6,Pablo and the Stallions
+Courtland Sutton,2730,1151,152,WR,185,-33,1940.5,141,-44.5,2018,2,40,HorseWomen of Color
+Quentin Johnston,2553,1325,165,WR,166,-1,1939,142,-1.5,NA,NA,NA,Howling for Chubb
+Zack Moss,2656,1221,156,RB,176,-20,1938.5,143,-0.5,2020,3,86,DirtyDan113
+Xavier Legette,2501,1367,168,WR,163,5,1934,144,-4.5,NA,NA,NA,NA
+Marvin Mims,2708,1152,153,WR,183,-30,1930,145,-4,NA,NA,NA,The Millennium Beer
+Jakobi Meyers,2656,1182,155,WR,178,-23,1919,146,-11,NA,NA,NA,Pablo and the Stallions
+DeAndre Hopkins,2508,1308,167,WR,169,-2,1908,147,-11,2013,1,27,DirtyDan113
+Braelon Allen,2229,1541,185,RB,148,37,1885,148,-23,NA,NA,NA,NA
+Dontayvion Wicks,2693,1076,154,WR,200,-46,1884.5,149,-0.5,NA,NA,NA,NA
+Gabriel Davis,2640,1098,157,WR,194,-37,1869,150,-15.5,2020,4,128,Howling for Chubb
+Chase Brown,2615,1112,159,RB,191,-32,1863.5,151,-5.5,NA,NA,NA,HorseWomen of Color
+Isaiah Likely,2639,1079,158,TE,199,-41,1859,152,-4.5,2022,4,139,HorseWomen of Color
+Sam Howell,2306,1403,178,QB,160,18,1854.5,153,-4.5,2022,5,144,Howling for Chubb
+Mike Williams,2426,1278,170,WR,171,-1,1852,154,-2.5,2017,1,7,Kissy Boy Jones
+Michael Wilson,2580,1101,162,WR,193,-31,1840.5,155,-11.5,NA,NA,NA,Kissy Boy Jones
+Devin Singletary,2453,1157,169,RB,182,-13,1805,156,-35.5,2019,3,74,JoJos Bizzare Massage
+Chuba Hubbard,2383,1142,173,RB,186,-13,1762.5,157,-42.5,2021,4,126,JoJos Bizzare Massage
+Raheem Mostert,2291,1231,180,RB,175,5,1761,158,-1.5,NA,NA,NA,DirtyDan113
+Gardner Minshew,2395,1097,172,QB,195,-23,1746,159,-15,NA,NA,NA,JoJos Bizzare Massage
+Curtis Samuel,2340,1151,177,WR,184,-7,1745.5,160,-0.5,2017,2,40,The Scene Worships Me
+Gus Edwards,2268,1125,181,RB,189,-8,1696.5,161,-49,NA,NA,NA,A Team of Chance
+Roman Wilson,2143,1244,194,WR,174,20,1693.5,162,-3,NA,NA,NA,NA
+Josh Palmer,2358,981,174,WR,209,-35,1669.5,163,-24,2021,3,77,The Millennium Beer
+Jerome Ford,2342,988,176,RB,208,-32,1665,164,-4.5,2022,5,156,The Scene Worships Me
+Keaton Mitchell,2397,931,171,RB,211,-40,1664,165,-1,NA,NA,NA,NA
+Darnell Mooney,2178,1026,189,WR,204,-15,1602,166,-62,2020,5,173,DirtyDan113
+Sam Darnold,2169,1026,190,QB,203,-13,1597.5,167,-4.5,2018,1,3,The Serle Brothers
+Khalil Shakir,2248,931,184,WR,212,-28,1589.5,168,-8,2022,5,148,The Millennium Beer
+Roschon Johnson,2291,862,179,RB,222,-43,1576.5,169,-13,NA,NA,NA,HorseWomen of Color
+Ja'Tavion Sanders,1732,1367,218,TE,162,56,1549.5,170,-27,NA,NA,NA,NA
+Rashid Shaheed,2258,776,183,WR,232,-49,1517,171,-32.5,NA,NA,NA,The Millennium Beer
+Demario Douglas,2260,766,182,WR,236,-54,1513,172,-4,NA,NA,NA,NA
+Wan'Dale Robinson,2163,848,191,WR,223,-32,1505.5,173,-7.5,2022,2,43,The Millennium Beer
+Tyler Lockett,2192,813,188,WR,228,-40,1502.5,174,-3,2015,3,69,Howling for Chubb
+Tucker Kraft,2130,869,195,TE,220,-25,1499.5,175,-3,NA,NA,NA,The Serle Brothers
+J.K. Dobbin,1943,1006,202,RB,206,-4,1474.5,176,-25,NA,NA,NA,NA
+Antonio Gibson,2114,833,196,RB,225,-29,1473.5,177,-1,2020,3,66,The Serle Brothers
+Cade Otton,2053,867,198,TE,221,-23,1460,178,-13.5,2022,4,106,The Millennium Beer
+Jalin Hyatt,2151,750,192,WR,242,-50,1450.5,179,-9.5,NA,NA,NA,Pablo and the Stallions
+Treylon Burks,2095,763,197,WR,237,-40,1429,180,-21.5,2022,1,18,JoJos Bizzare Massage
+Tyler Allgeier,2145,700,193,RB,259,-66,1422.5,181,-6.5,2022,5,151,Howling for Chubb
+Ja'Lynn Polk,1656,1096,224,WR,196,28,1376,182,-46.5,NA,NA,NA,NA
+Jonathan Mingo,1986,752,199,WR,240,-41,1369,183,-7,NA,NA,NA,The Serle Brothers
+Dameon Pierce,1908,821,205,RB,227,-22,1364.5,184,-4.5,2022,4,107,The Scene Worships Me
+Rashod Bateman,1976,752,200,WR,241,-41,1364,185,-0.5,2021,1,27,The Serle Brothers
+Bucky Irving,1562,1129,232,RB,188,44,1345.5,186,-18.5,NA,NA,NA,NA
+Ricky Pearsall,1490,1162,238,WR,180,58,1326,187,-19.5,NA,NA,NA,NA
+Khalil Herbert,1874,754,210,RB,239,-29,1314,188,-12,2021,6,217,Kissy Boy Jones
+Chigoziem Okonkwo,1848,771,213,TE,234,-21,1309.5,189,-4.5,2022,4,143,The Scene Worships Me
+Aidan O'Connell,1871,743,211,QB,245,-34,1307,190,-2.5,NA,NA,NA,NA
+Elijah Moore,1926,682,204,WR,261,-57,1304,191,-3,2021,2,34,The Scene Worships Me
+Ty Chandler,1862,745,212,RB,244,-32,1303.5,192,-0.5,2022,5,169,NA
+Spencer Rattler,1717,880,219,QB,218,1,1298.5,193,-5,NA,NA,NA,NA
+Rondale Moore,1940,657,203,WR,265,-62,1298.5,194,0,2021,2,49,Howling for Chubb
+MarShawn Lloyd,1417,1160,249,RB,181,68,1288.5,195,-10,NA,NA,NA,NA
+Tank Bigsby,1880,655,209,RB,267,-58,1267.5,196,-21,NA,NA,NA,A Team of Chance
+Malachi Corley,1353,1170,259,WR,179,80,1261.5,197,-6,NA,NA,NA,NA
+Greg Dulcich,1840,674,214,TE,263,-49,1257,198,-4.5,2022,3,80,JoJos Bizzare Massage
+Jaleel McLaughlin,1881,633,208,RB,270,-62,1257,199,0,NA,NA,NA,NA
+Audric Estime,1422,1086,248,RB,198,50,1254,200,-3,NA,NA,NA,NA
+Trey Palmer,1884,586,207,WR,282,-75,1235,201,-19,NA,NA,NA,NA
+Trey Lance,1567,881,230,QB,217,13,1224,202,-11,2021,1,3,The Millennium Beer
+Noah Fant,1699,722,220,TE,252,-32,1210.5,203,-13.5,2019,1,20,DirtyDan113
+Miles Sanders,1585,755,229,RB,238,-9,1170,204,-40.5,2019,2,53,DirtyDan113
+AJ Dillon,1638,702,225,RB,258,-33,1170,205,0,2020,2,62,The Millennium Beer
+Devontez Walker,1223,1102,276,WR,192,84,1162.5,206,-7.5,NA,NA,NA,NA
+Brenden Rice,1366,908,256,WR,215,41,1137,207,-25.5,NA,NA,NA,NA
+Will Shipley,1212,1013,281,RB,205,76,1112.5,208,-24.5,NA,NA,NA,NA
+Brandin Cooks,1620,546,226,WR,295,-69,1083,209,-29.5,2014,1,20,HorseWomen of Color
+Kenny Pickett,1396,767,252,QB,235,17,1081.5,210,-1.5,2022,1,20,Pablo and the Stallions
+Adam Thielen,1494,630,237,WR,271,-34,1062,211,-19.5,NA,NA,NA,A Team of Chance
+Jonnu Smith,1471,608,240,TE,275,-35,1039.5,212,-22.5,2017,3,100,NA
+Rico Dowdle,1741,334,217,RB,319,-102,1037.5,213,-2,NA,NA,NA,NA
+Alec Pierce,1758,312,216,WR,321,-105,1035,214,-2.5,2022,2,53,Pablo and the Stallions
+Alexander Mattison,1370,657,254,RB,266,-12,1013.5,215,-21.5,2019,3,102,The Serle Brothers
+Jacoby Brissett,1499,518,236,QB,301,-65,1008.5,216,-5,2016,3,91,Pablo and the Stallions
+Tyler Boyd,1669,310,223,WR,322,-99,989.5,217,-19,2016,2,55,Kissy Boy Jones
+Darren Waller,1165,793,291,TE,231,60,979,218,-10.5,2015,6,204,Howling for Chubb
+Hunter Henry,1482,408,239,TE,312,-73,945,219,-34,2016,2,35,DirtyDan113
+Jalen McMillan,914,928,318,WR,213,105,921,220,-24,NA,NA,NA,NA
+Elijah Mitchell,1587,251,228,RB,327,-99,919,221,-2,2021,6,194,DirtyDan113
+A.T. Perry,1521,304,234,WR,323,-89,912.5,222,-6.5,NA,NA,NA,NA
+Dawson Knox,1520,277,235,TE,326,-91,898.5,223,-14,2019,3,96,Pablo and the Stallions
+Juwan Johnson,1415,375,250,TE,316,-66,895,224,-3.5,NA,NA,NA,A Team of Chance
+Hendon Hooker,1363,408,257,QB,313,-56,885.5,225,-9.5,NA,NA,NA,Howling for Chubb
+Daniel Bellinger,1348,377,261,TE,315,-54,862.5,226,-23,2022,4,112,NA
+John Metchie,1440,280,245,WR,325,-80,860,227,-2.5,NA,NA,NA,The Scene Worships Me
+Mike Gesicki,1218,501,279,TE,306,-27,859.5,228,-0.5,2018,2,42,Pablo and the Stallions
+Ezekiel Elliott,1166,547,290,RB,293,-3,856.5,229,-3,2016,1,4,DirtyDan113
+Jake Browning,1296,377,270,QB,314,-44,836.5,230,-20,NA,NA,NA,NA
+Noah Brown,1605,36,227,WR,343,-116,820.5,231,-16,2017,7,239,NA
+Israel Abanikanda,1422,183,247,RB,331,-84,802.5,232,-18,NA,NA,NA,HorseWomen of Color
+Drew Lock,1312,282,268,QB,324,-56,797,233,-5.5,NA,NA,NA,NA
+K.J. Osborn,1426,159,246,WR,334,-88,792.5,234,-4.5,2020,5,176,The Scene Worships Me
+Mac Jones,1074,501,300,QB,307,-7,787.5,235,-5,2021,1,15,A Team of Chance
+Brevin Jordan,1366,180,255,TE,332,-77,773,236,-14.5,2021,5,147,NA
+Jarrett Stidham,1187,334,284,QB,320,-36,760.5,237,-12.5,2019,4,133,The Millennium Beer
+Desmond Ridder,1167,338,289,QB,318,-29,752.5,238,-8,2022,3,74,The Millennium Beer
+Zay Jones,1412,68,251,WR,340,-89,740,239,-12.5,2017,2,37,DirtyDan113
+Skyy Moore,1315,122,267,WR,338,-71,718.5,240,-21.5,2022,2,54,HorseWomen of Color
+Kenneth Gainwell,1227,195,274,RB,330,-56,711,241,-7.5,2021,5,150,The Millennium Beer
+D'Onta Foreman,1197,208,283,RB,329,-46,702.5,242,-8.5,2017,3,89,A Team of Chance
+Cedric Tillman,1254,138,273,WR,336,-63,696,243,-6.5,NA,NA,NA,The Serle Brothers
+Andrei Iosivas,1349,15,260,WR,346,-86,682,244,-14,NA,NA,NA,NA
+Johnny Wilson,488,796,392,WR,230,162,642,245,-40,NA,NA,NA,NA
+Ray Davis,397,884,412,RB,216,196,640.5,246,-1.5,NA,NA,NA,NA
+Taysom Hill,1062,210,302,TE,328,-26,636,247,-4.5,NA,NA,NA,NA
+Noah Gray,1218,36,280,TE,344,-64,627,248,-9,2021,5,162,The Serle Brothers
+Jelani Woods,1091,150,297,TE,335,-38,620.5,249,-6.5,2022,3,73,The Millennium Beer
+Michael Carter,1169,15,286,RB,347,-61,592,250,-28.5,2021,4,107,Kissy Boy Jones
+Joe Milton,442,712,403,QB,255,148,577,251,-15,NA,NA,NA,NA
+Cam Akers,1018,135,307,RB,337,-30,576.5,252,-0.5,2020,2,52,JoJos Bizzare Massage
+Gerald Everett,1029,101,306,TE,339,-33,565,253,-11.5,2017,2,44,A Team of Chance
+Joe Flacco,680,436,356,QB,311,45,558,254,-7,NA,NA,NA,NA
+Clyde Edwards-Helaire,1084,23,299,RB,345,-46,553.5,255,-4.5,2020,1,32,Pablo and the Stallions
+Jermaine Burton,245,827,458,WR,226,232,536,256,-17.5,NA,NA,NA,NA
+Zach Ertz,723,346,349,TE,317,32,534.5,257,-1.5,2013,2,35,Kissy Boy Jones
+Jordan Travis,305,722,436,QB,251,185,513.5,258,-21,NA,NA,NA,NA
+Joshua Dobbs,788,161,339,QB,333,6,474.5,259,-39,2017,4,135,NA
+Zach Wilson,922,0,315,QB,350,-35,461,260,-13.5,2021,1,2,JoJos Bizzare Massage
+Davis Allen,869,6,325,TE,349,-24,437.5,261,-23.5,NA,NA,NA,NA
+Tyler Conklin,758,66,343,TE,341,2,412,262,-25.5,2018,5,157,Howling for Chubb
+Jase McClellan,116,619,489,RB,273,216,367.5,263,-44.5,NA,NA,NA,NA
+Cade Stover,0,730,499,TE,248,251,365,264,-2.5,NA,NA,NA,NA
