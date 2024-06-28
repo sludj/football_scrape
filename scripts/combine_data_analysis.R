@@ -11,6 +11,10 @@ fantasycalc <- read_csv("final_data/fantasycalc_values.csv") %>%
   mutate(fc_rank_overall = row_number(),
          fc_position = str_sub(posRank, end = 2))
 
+fantasycalc <- read_delim("raw_data/fantasycalc_dynasty_rankings.csv", delim = ";") %>% 
+  select(player_name = name, age, value, posRank = positionRank,
+         fc_rank_overall = overallRank, trend30day)
+
 ktc <- read_csv("final_data/ktc_values.csv") %>% 
   mutate(ktc_rank = row_number()) %>% 
   rename(ktc_value = player_values)
@@ -38,9 +42,9 @@ sleeper_teams <- read_csv("final_data/reference_table/sleeper_teams.csv")
 
 # map ktc names to fc
 fc_mapped <- fantasycalc %>% 
-  mutate(player_name = str_remove(.$player_name, "Rarrow_circle_up|Rarrow_circle_down|arrow_circle_up|arrow_circle_down|R$")) %>% 
-  left_join(fc_map) %>% 
-  mutate(combined_name = coalesce(ktc_name, player_name)) %>% 
+  mutate(player_name = str_remove(.$player_name, "Rarrow_circle_up|Rarrow_circle_down|arrow_circle_up|arrow_circle_down|R$")) %>%
+  left_join(fc_map) %>%
+  mutate(combined_name = coalesce(ktc_name, player_name)) %>%
   select(player_name = combined_name, age, fc_value = value, fc_rank = posRank, fc_rank_overall)
 
 fp_mapped <- fp_tv %>% 
@@ -60,13 +64,13 @@ combined <- ktc %>%
 # no_join_fc <- anti_join(fantasycalc, ktc)
 # no_join_ktc <- anti_join(ktc, fantasycalc)
 # 
-# no_join_fc_map_list <- no_join_fc %>% 
-#   filter(!str_detect(player_name, "202*"))
-# no_join_ktc_map_list <- no_join_ktc %>% 
-#   filter(!str_detect(player_name, "202*"))
+no_join_fc_map_list <- no_join_fc %>%
+  filter(!str_detect(player_name, "202*"))
+no_join_ktc_map_list <- no_join_ktc %>%
+  filter(!str_detect(player_name, "202*"))
 
 # If needed, we get this list to map against KTC
-#write_csv(no_join_fc_map_list, "mapping_files/fc_map_list.csv")
+write_csv(no_join_fc_map_list, "mapping_files/fc_map_list.csv")
 
 # calculate difference in value and rank
 combined_analysis <- combined %>% 

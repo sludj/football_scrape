@@ -28,8 +28,7 @@ for(i in seq(from = 0, to = 9, by = 1)) {
     str_remove("[A-Z]{2,}\\\r\\\n\\s*") %>% 
     str_remove("\\s*\\\r\\\n\\s*") %>% 
     str_remove("\\s*") %>% 
-    str_remove("\\n\\s*") %>% 
-    str_remove(".{3}$")
+    str_remove("\\n\\s*")
   
   player_values <- url %>% 
     read_html() %>% 

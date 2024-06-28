@@ -1,5 +1,9 @@
 # attempt to scrape fantasycalc.com
 # Only requirement is installing these packages and java
+# Now you can download the csv from the fantasy calc website!!!
+# Potentially no reason to run
+#
+#
 library("RSelenium")
 library("rvest")
 library("tidyverse")
